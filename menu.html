@@ -1,70 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang='es'>
 <head>
-  <meta charset="UTF-8">
-  <title>Menú - Phanton</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <title>Phanton - Menú</title>
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 data-eb-editable data-eb-editable="text" data-eb-key="menu.h1.1" data-eb-role="h1" data-eb-kind="text">Phanton</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" data-eb-editable="link" data-eb-key="menu.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-          <li><a href="menu.html" aria-current="page" data-eb-editable="link" data-eb-key="menu.a.3" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-          <li><a href="contacto.html" data-eb-editable="link" data-eb-key="menu.a.4" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='index.html' data-eb-editable='true'>Inicio</a></li>
+                <li><a href='menu.html' class='active' data-eb-editable='true'>Menú</a></li>
+                <li><a href='contacto.html' data-eb-editable='true'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="container">
-    <h2 data-eb-editable data-eb-editable="text" data-eb-key="menu.h2.5" data-eb-role="h2" data-eb-kind="text">Nuestra Carta</h2>
-  </section>
+    <section class='hero'>
+        <h1 data-eb-editable='true'>Menú Completo</h1>
+        <p data-eb-editable='true'>Descubre nuestras pizzas y acompañamientos.</p>
+        <a href='https://wa.me/1113467889' class='cta' data-eb-editable='true'>Has tu pedido en WhatsApp</a>
+    </section>
 
-  <section class="container">
-    <h2 data-eb-editable data-eb-editable="text" data-eb-key="menu.h2.6" data-eb-role="h2" data-eb-kind="text">Pizzas</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 data-eb-editable data-eb-editable="text" data-eb-key="menu.h3.7" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
-        <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.8" data-eb-role="p" data-eb-kind="text">Deliciosa combinación de jamón y piña.</p>
-      </div>
-    </div>
-  </section>
+    <section>
+        <h2 data-eb-editable='true'>Pizzas</h2>
+        <div class='menu-grid'>
+            <!-- Pizza Hawaiana -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='pizza-hawaina.jpg' alt='Pizza Hawaiana'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Pizza Hawaiana</h3>
+                    <p data-eb-editable='true'>Jamón, piña y queso mozzarella.</p>
+                    <p class='price' data-eb-editable='true'>$180</p>
+                </div>
+            </div>
+            <!-- Pizza Pepperoni -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='pizza-pepperoni.jpg' alt='Pizza Pepperoni'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Pizza Pepperoni</h3>
+                    <p data-eb-editable='true'>Pepperoni, queso y salsa de tomate.</p>
+                    <p class='price' data-eb-editable='true'>$200</p>
+                </div>
+            </div>
+            <!-- Pizza Vegetariana -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='pizza-vegetariana.jpg' alt='Pizza Vegetariana'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Pizza Vegetariana</h3>
+                    <p data-eb-editable='true'>Pimientos, champiñones, aceitunas y queso.</p>
+                    <p class='price' data-eb-editable='true'>$190</p>
+                </div>
+            </div>
+            <!-- Pizza Mexicana -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='pizza-mexicana.jpg' alt='Pizza Mexicana'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Pizza Mexicana</h3>
+                    <p data-eb-editable='true'>Chorizo, jalapeños, cebolla y queso.</p>
+                    <p class='price' data-eb-editable='true'>$210</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="container">
-    <h2 data-eb-editable data-eb-editable="text" data-eb-key="menu.h2.9" data-eb-role="h2" data-eb-kind="text">Bebidas</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 data-eb-editable data-eb-editable="text" data-eb-key="menu.h3.10" data-eb-role="h3" data-eb-kind="text">Coca-Cola</h3>
-        <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.11" data-eb-role="p" data-eb-kind="text">Refresco clásico.</p>
-      </div>
-      <div class="card">
-        <h3 data-eb-editable data-eb-editable="text" data-eb-key="menu.h3.12" data-eb-role="h3" data-eb-kind="text">Jugo Natural</h3>
-        <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.13" data-eb-role="p" data-eb-kind="text">Jugo de fruta del día.</p>
-      </div>
-    </div>
-  </section>
+    <section>
+        <h2 data-eb-editable='true'>Acompañamientos</h2>
+        <div class='menu-grid' style='grid-template-columns: repeat(2,1fr);'>
+            <!-- Coca Cola -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='cocacola.jpg' alt='Coca Cola'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Coca Cola</h3>
+                    <p data-eb-editable='true'>Refresco de 600 ml.</p>
+                    <p class='price' data-eb-editable='true'>$30</p>
+                </div>
+            </div>
+            <!-- Jugo de Naranja -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='jugo-naranja.jpg' alt='Jugo de Naranja'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Jugo de Naranja</h3>
+                    <p data-eb-editable='true'>Jugo natural 500 ml.</p>
+                    <p class='price' data-eb-editable='true'>$35</p>
+                </div>
+            </div>
+            <!-- Papas Fritas -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='papas-fritas.jpg' alt='Papas Fritas'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Papas Fritas</h3>
+                    <p data-eb-editable='true'>Porción mediana.</p>
+                    <p class='price' data-eb-editable='true'>$40</p>
+                </div>
+            </div>
+            <!-- Ensalada -->
+            <div class='menu-card' data-eb-editable='true'>
+                <img src='ensalada.jpg' alt='Ensalada'>
+                <div class='menu-card-body'>
+                    <h3 data-eb-editable='true'>Ensalada Verde</h3>
+                    <p data-eb-editable='true'>Lechuga, tomate, zanahoria y aderezo.</p>
+                    <p class='price' data-eb-editable='true'>$45</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="container">
-    <h2 data-eb-editable data-eb-editable="text" data-eb-key="menu.h2.14" data-eb-role="h2" data-eb-kind="text">Promociones</h2>
-    <div class="card">
-      <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.15" data-eb-role="p" data-eb-kind="text">Precios de pizzas: desde $150 hasta $350.</p>
-      <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.16" data-eb-role="p" data-eb-kind="text">Servicio a domicilio: $5 pesos (ver sección de domicilio en inicio).</p>
-      <a href="https://wa.me/1113467889" class="btn" data-eb-editable data-eb-editable="link" data-eb-key="menu.a.17" data-eb-role="a" data-eb-kind="link">Hacer tu pedido por WhatsApp</a>
-    </div>
-  </section>
-
-  <footer class="container">
-    <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.18" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton. Todos los derechos reservados.</p>
-    <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.19" data-eb-role="p" data-eb-kind="text">Teléfono: 1113467889</p>
-    <p data-eb-editable data-eb-editable="text" data-eb-key="menu.p.20" data-eb-role="p" data-eb-kind="text">Horario: martes a domingo de 7 am a 11 pm</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <footer>
+        <p data-eb-editable='true'>Phanton &copy; 2026 - Todos los derechos reservados.</p>
+        <p data-eb-editable='true'>Tel: 1113467889 | Horario: martes a domingo de 7 am a 11 pm</p>
+        <p data-eb-editable='true'>Sí entregamos a domicilio.</p>
+    </footer>
 </body>
 </html>
