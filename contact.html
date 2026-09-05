@@ -2,69 +2,64 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Phanton Pizza - Contacto</title>
+<title>Contacto - Phanton Pizzas</title>
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="site-header">
-<div class="container header-inner">
-<a href="index.html" class="logo" data-eb-editable="link" data-eb-key="contact.a.1" data-eb-role="a" data-eb-kind="link">Phanton</a>
-<button class="nav-toggle" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="contact.button.2" data-eb-role="button" data-eb-kind="link">
-<span class="hamburger"></span>
-</button>
-<nav class="primary-nav" id="primary-nav">
-<ul>
-<li><a href="index.html" data-eb-editable="link" data-eb-key="contact.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-<li><a href="menu.html" data-eb-editable="link" data-eb-key="contact.a.4" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-<li><a href="about.html" data-eb-editable="link" data-eb-key="contact.a.5" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
-<li><a href="contact.html" aria-current="page" data-eb-editable="link" data-eb-key="contact.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+<div class="container">
+<div class="nav">
+<a href="index.html" class="nav-logo" data-eb-editable="link" data-eb-key="contact.a.1" data-eb-role="a" data-eb-kind="link">Phanton</a>
+<ul class="nav-list">
+<li><a href="index.html" data-eb-editable="link" data-eb-key="contact.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+<li><a href="menu.html" data-eb-editable="link" data-eb-key="contact.a.3" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+<li><a href="about.html" data-eb-editable="link" data-eb-key="contact.a.4" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+<li><a href="contact.html" aria-current="page" data-eb-editable="link" data-eb-key="contact.a.5" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+<li><a href="gallery.html" data-eb-editable="link" data-eb-key="contact.a.6" data-eb-role="a" data-eb-kind="link">Galería</a></li>
 </ul>
-</nav>
+</div>
 </div>
 </header>
 
 <main class="container">
-<section class="contact-info">
-<h2 data-editable data-eb-editable="text" data-eb-key="contact.h2.7" data-eb-role="h2" data-eb-kind="text">Información de contacto</h2>
-<p data-eb-editable="text" data-eb-key="contact.p.8" data-eb-role="p" data-eb-kind="text"><span data-label>Teléfono:</span> <span data-editable>1113467889</span></p>
-<p data-eb-editable="text" data-eb-key="contact.p.9" data-eb-role="p" data-eb-kind="text"><span data-label>Horario:</span> <span data-editable>martes a domingo de 7 am a 11 pm</span></p>
-<p data-eb-editable="text" data-eb-key="contact.p.10" data-eb-role="p" data-eb-kind="text"><span data-label>Dirección:</span> <span data-editable></span></p>
+<section class="contact-form">
+<h2 data-eb-editable="text" data-eb-key="contact.h2.7" data-eb-role="h2" data-eb-kind="text">Envíanos un mensaje</h2>
+<form id="contactForm">
+<div class="form-group">
+<label for="name">Nombre</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email">Correo electrónico</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="message">Mensaje</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary" data-eb-editable="link" data-eb-key="contact.button.8" data-eb-role="button" data-eb-kind="link">Enviar</button>
+</form>
 </section>
 
-<section class="contact-map">
-<h2 data-editable data-eb-editable="text" data-eb-key="contact.h2.11" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
+<section class="map">
+<h2 data-eb-editable="text" data-eb-key="contact.h2.9" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</section>
+
+<section class="info">
+<h2 data-eb-editable="text" data-eb-key="contact.h2.10" data-eb-role="h2" data-eb-kind="text">Información de contacto</h2>
+<p data-eb-editable data-eb-editable="text" data-eb-key="contact.p.11" data-eb-role="p" data-eb-kind="text">Teléfono: <span class="editable" data-eb-editable>1113467889</span></p>
+<p data-eb-editable data-eb-editable="text" data-eb-key="contact.p.12" data-eb-role="p" data-eb-kind="text">Horario: <span class="editable" data-eb-editable>martes a domingo de 7 am a 11 pm</span></p>
+<p data-eb-editable data-eb-editable="text" data-eb-key="contact.p.13" data-eb-role="p" data-eb-kind="text">Descripción: <span class="editable" data-eb-editable>vendemos pizza a domicilio 5 peso a domicilio o come en el local</span></p>
+<p data-eb-editable data-eb-editable="text" data-eb-key="contact.p.14" data-eb-role="p" data-eb-kind="text">Ordenar por WhatsApp: <span class="editable" data-eb-editable>has tupedidoen whasap</span></p>
 </section>
 </main>
 
 <footer class="site-footer">
-<div class="container footer-inner">
-<div class="footer-info">
-<h3 class="footer-title" data-editable data-eb-editable="text" data-eb-key="contact.h3.12" data-eb-role="h3" data-eb-kind="text">Phanton Pizza</h3>
-<p class="footer-address" data-eb-editable="text" data-eb-key="contact.p.13" data-eb-role="p" data-eb-kind="text"><span data-label>Dirección:</span> <span data-editable></span></p>
-<p class="footer-phone" data-eb-editable="text" data-eb-key="contact.p.14" data-eb-role="p" data-eb-kind="text"><span data-label>Teléfono:</span> <span data-editable>1113467889</span></p>
-<p class="footer-schedule" data-eb-editable="text" data-eb-key="contact.p.15" data-eb-role="p" data-eb-kind="text"><span data-label>Horario:</span> <span data-editable>martes a domingo de 7 am a 11 pm</span></p>
-</div>
-<div class="footer-map">
-<h3 class="footer-title" data-editable data-eb-editable="text" data-eb-key="contact.h3.16" data-eb-role="h3" data-eb-kind="text">Mapa</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-</div>
-</div>
-<div class="footer-bottom">
-<p data-eb-editable="text" data-eb-key="contact.p.17" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton Pizza. Todos los derechos reservados.</p>
+<div class="container">
+<p data-eb-editable="text" data-eb-key="contact.p.15" data-eb-role="p" data-eb-kind="text">© 2026 Phanton Pizzas. Todos los derechos reservados.</p>
 </div>
 </footer>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
- const toggle = document.querySelector('.nav-toggle');
- const nav = document.querySelector('.primary-nav');
- if (toggle && nav) {
-   toggle.addEventListener('click', () => nav.classList.toggle('open'));
- }
- document.getElementById('year').textContent = new Date().getFullYear();
-});
-</script>
 </body>
 </html>
