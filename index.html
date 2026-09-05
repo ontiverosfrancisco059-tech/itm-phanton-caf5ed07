@@ -2,53 +2,152 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Phanton</title>
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phanton - Pizzas a Domicilio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" data-eb-editable data-eb-key="nav_home" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-                <li><a href="menu.html" data-eb-editable data-eb-key="nav_menu" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-                <li><a href="contacto.html" data-eb-editable data-eb-key="nav_contacto" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1 data-eb-editable data-eb-key="hero_title" data-eb-editable="text" data-eb-key="index.h1.4" data-eb-role="h1" data-eb-kind="text">Phanton</h1>
-            <p data-eb-editable data-eb-key="hero_subtitle" data-eb-editable="text" data-eb-key="index.p.5" data-eb-role="p" data-eb-kind="text">Pizzas y Tacos EL SUSPIRO</p>
-            <a href="https://wa.me/1113467889" class="cta" data-eb-editable data-eb-key="hero_cta" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Has tu pedido en WhatsApp</a>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Phanton - Pizzas a Domicilio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
+                <!-- SVG inline for a simple pizza slice icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.27L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#e63946"/>
+                </svg>
+                <span data-editable="true" data-key="site-title">Phanton</span>
+            </a>
+            <nav class="site-nav" aria-label="Navegación principal">
+                <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="24" height="3" rx="1.5"/>
+                        <rect y="7" width="24" height="3" rx="1.5"/>
+                        <rect y="14" width="24" height="3" rx="1.5"/>
+                    </svg>
+                </button>
+                <ul id="primary-menu" class="menu-list">
+                    <li><a href="index.html" data-editable="true" data-key="nav-home" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                    <li><a href="menu.html" data-editable="true" data-key="nav-menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                    <li><a href="about.html" data-editable="true" data-key="nav-about" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+                    <li><a href="contact.html" data-editable="true" data-key="nav-contact" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+                    <li><a href="location.html" data-editable="true" data-key="nav-location" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/1113467889" class="btn btn-primary" data-editable="true" data-key="cta-whatsapp" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Has tu pedido en WhatsApp</a>
+                <a href="tel:1113467889" class="btn btn-secondary" aria-label="Llamar ahora" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h6.17l-1.41 1.41C5.76 14.75 5 15.55 5 16.5v1.5c0 .83.67 1.5 1.5 1.5h9c.83 0 1.5-.67 1.5-1.5v-1c0-.95-.76-1.75-1.71-1.5L12 14z" fill="#e63946"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
-    <section class="about">
-        <h2 data-eb-editable data-eb-key="about_title" data-eb-editable="text" data-eb-key="index.h2.7" data-eb-role="h2" data-eb-kind="text">Sobre nosotros</h2>
-        <p data-eb-editable data-eb-key="about_text" data-eb-editable="text" data-eb-key="index.p.8" data-eb-role="p" data-eb-kind="text">vendemos pizza a domicilio 5 peso a domicilio o come en el local</p>
+    <!-- Hero -->
+    <section class="hero" aria-label="Introducción">
+        <div class="container">
+            <h1 data-editable="true" data-key="hero-title" data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Phanton - Pizzas a Domicilio</h1>
+            <p data-editable="true" data-key="hero-subtitle" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Sabores artesanales entregados en tu puerta, disponibles de martes a domingo de 7 am a 11 pm.</p>
+            <a href="menu.html" class="btn btn-primary" data-editable="true" data-key="hero-cta" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Ver Menú</a>
+        </div>
     </section>
 
-    <section class="menu-highlight">
-        <h2 data-eb-editable data-eb-key="menu_highlight_title" data-eb-editable="text" data-eb-key="index.h2.9" data-eb-role="h2" data-eb-kind="text">Menú destacado</h2>
-        <p data-eb-editable data-eb-key="menu_highlight_text" data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">Pizza hawaiana</p>
-        <p data-eb-editable data-eb-key="menu_highlight_details" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Entrada, pizza y su Coca Cola o jugo, distintos tipos de pizzas</p>
+    <!-- About Preview -->
+    <section class="about-preview" aria-label="Sobre nosotros">
+        <div class="container">
+            <h2 data-editable="true" data-key="about-heading" data-eb-editable="text" data-eb-key="index.h2.13" data-eb-role="h2" data-eb-kind="text">Sobre Phanton</h2>
+            <p data-editable="true" data-key="about-text" data-eb-editable="text" data-eb-key="index.p.14" data-eb-role="p" data-eb-kind="text">Vendemos pizza a domicilio a solo $5 peso o puedes venir a disfrutarla en nuestro local. Nuestra pasión es ofrecer ingredientes frescos y una experiencia auténtica.</p>
+        </div>
     </section>
 
-    <section class="info">
-        <h2 data-eb-editable data-eb-key="info_title" data-eb-editable="text" data-eb-key="index.h2.12" data-eb-role="h2" data-eb-kind="text">Horario y ubicación</h2>
-        <p data-eb-editable data-eb-key="info_schedule" data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">Martes a domingo de 7 am a 11 pm</p>
-        <p data-eb-editable data-eb-key="info_phone" data-eb-editable="text" data-eb-key="index.p.14" data-eb-role="p" data-eb-kind="text">Teléfono: 1113467889</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <!-- Menu Preview -->
+    <section class="menu-preview" aria-label="Vista del menú">
+        <div class="container">
+            <h2 data-editable="true" data-key="menu-preview-heading" data-eb-editable="text" data-eb-key="index.h2.15" data-eb-role="h2" data-eb-kind="text">Nuestras Especialidades</h2>
+            <div class="cards-grid">
+                <!-- Pizza Hawaina (featured) -->
+                <article class="card" data-editable="true" data-key="featured-pizza">
+                    <h3 data-editable="true" data-key="featured-pizza-title" data-eb-editable="text" data-eb-key="index.h3.16" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
+                    <p data-editable="true" data-key="featured-pizza-desc" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Jamón, piña y queso mozzarella sobre nuestra masa artesanal.</p>
+                </article>
+                <!-- Generic pizza -->
+                <article class="card" data-editable="true" data-key="generic-pizza">
+                    <h3 data-editable="true" data-key="generic-pizza-title" data-eb-editable="text" data-eb-key="index.h3.18" data-eb-role="h3" data-eb-kind="text">Pizza Tradicional</h3>
+                    <p data-editable="true" data-key="generic-pizza-desc" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Queso, pepperoni, champiñones y aceitunas.</p>
+                </article>
+                <!-- Taco -->
+                <article class="card" data-editable="true" data-key="generic-taco">
+                    <h3 data-editable="true" data-key="generic-taco-title" data-eb-editable="text" data-eb-key="index.h3.20" data-eb-role="h3" data-eb-kind="text">Taco de Carne Asada</h3>
+                    <p data-editable="true" data-key="generic-taco-desc" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Carne asada, cilantro, cebolla y salsa al gusto.</p>
+                </article>
+            </div>
+            <a href="menu.html" class="btn btn-secondary" data-editable="true" data-key="menu-preview-cta" data-eb-editable="link" data-eb-key="index.a.22" data-eb-role="a" data-eb-kind="link">Ver Menú Completo</a>
+        </div>
     </section>
 
-    <section class="testimonials">
-        <h2 data-eb-editable data-eb-key="testimonials_title" data-eb-editable="text" data-eb-key="index.h2.15" data-eb-role="h2" data-eb-kind="text">Testimonios</h2>
-        <blockquote data-eb-editable data-eb-key="testimonial_1">"Las mejores pizzas de Campeche, entrega rápida y sabor auténtico."</blockquote>
-        <blockquote data-eb-editable data-eb-key="testimonial_2">"Precios accesibles y excelente atención."</blockquote>
+    <!-- CTA Call -->
+    <section class="cta-call" aria-label="Llamar ahora">
+        <div class="container">
+            <h2 data-editable="true" data-key="cta-heading" data-eb-editable="text" data-eb-key="index.h2.23" data-eb-role="h2" data-eb-kind="text">¿Listo para ordenar?</h2>
+            <p data-editable="true" data-key="cta-text" data-eb-editable="text" data-eb-key="index.p.24" data-eb-role="p" data-eb-kind="text">Llámanos o envía un WhatsApp y disfruta de nuestra pizza en minutos.</p>
+            <div class="cta-buttons">
+                <a href="tel:1113467889" class="btn btn-primary" data-editable="true" data-key="cta-call" data-eb-editable="link" data-eb-key="index.a.25" data-eb-role="a" data-eb-kind="link">Llamar Ahora</a>
+                <a href="https://wa.me/1113467889" class="btn btn-secondary" data-editable="true" data-key="cta-whatsapp" data-eb-editable="link" data-eb-key="index.a.26" data-eb-role="a" data-eb-kind="link">WhatsApp</a>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p data-eb-editable data-eb-key="footer_text" data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton. Todos los derechos reservados.</p>
-        <p data-eb-editable data-eb-key="footer_cta" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text"><a href="https://wa.me/1113467889" data-eb-editable="link" data-eb-key="index.a.18" data-eb-role="a" data-eb-kind="link">Ordenar por WhatsApp</a></p>
+    <!-- Location Preview -->
+    <section class="location-preview" aria-label="Ubicación">
+        <div class="container">
+            <h2 data-editable="true" data-key="location-heading" data-eb-editable="text" data-eb-key="index.h2.27" data-eb-role="h2" data-eb-kind="text">Encuéntranos en Campeche</h2>
+            <p data-editable="true" data-key="location-text" data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Estamos ubicados en Campeche. Para ver el mapa detallado y obtener indicaciones, visita nuestra página de ubicación.</p>
+            <a href="location.html" class="btn btn-primary" data-editable="true" data-key="location-cta" data-eb-editable="link" data-eb-key="index.a.29" data-eb-role="a" data-eb-kind="link">Ver Ubicación</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-label="Información de pie de página">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3 data-editable="true" data-key="footer-title" data-eb-editable="text" data-eb-key="index.h3.30" data-eb-role="h3" data-eb-kind="text">Phanton</h3>
+                <p data-editable="true" data-key="footer-desc" data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Pizzas a domicilio en Campeche. Horario: martes a domingo de 7 am a 11 pm.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-editable="true" data-key="footer-contact-title" data-eb-editable="text" data-eb-key="index.h4.32" data-eb-role="h4" data-eb-kind="text">Contacto</h4>
+                <ul>
+                    <li><a href="tel:1113467889" data-editable="true" data-key="footer-phone" data-eb-editable="link" data-eb-key="index.a.33" data-eb-role="a" data-eb-kind="link">📞 1113467889</a></li>
+                    <li><a href="https://wa.me/1113467889" data-editable="true" data-key="footer-whatsapp" data-eb-editable="link" data-eb-key="index.a.34" data-eb-role="a" data-eb-kind="link">💬 WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-editable="true" data-key="footer-links-title" data-eb-editable="text" data-eb-key="index.h4.35" data-eb-role="h4" data-eb-kind="text">Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html" data-editable="true" data-key="footer-home" data-eb-editable="link" data-eb-key="index.a.36" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                    <li><a href="menu.html" data-editable="true" data-key="footer-menu" data-eb-editable="link" data-eb-key="index.a.37" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                    <li><a href="about.html" data-editable="true" data-key="footer-about" data-eb-editable="link" data-eb-key="index.a.38" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+                    <li><a href="contact.html" data-editable="true" data-key="footer-contact" data-eb-editable="link" data-eb-key="index.a.39" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+                    <li><a href="location.html" data-editable="true" data-key="footer-location" data-eb-editable="link" data-eb-key="index.a.40" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p data-editable="true" data-key="footer-copyright" data-eb-editable="text" data-eb-key="index.p.41" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Simple script to set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        // Mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const menuList = document.getElementById('primary-menu');
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+            menuList.classList.toggle('menu-open');
+        });
+    </script>
 </body>
 </html>
