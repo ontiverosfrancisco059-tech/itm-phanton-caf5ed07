@@ -4,99 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phanton Pizza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-logo">Phanton Pizza</div>
-    <nav class="nav-links" id="nav-links">
-      <a href="index.html" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Home</a>
-      <a href="menu.html" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Menu</a>
-      <a href="contact.html" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Contact</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle" data-eb-editable="link" data-eb-key="index.button.4" data-eb-role="button" data-eb-kind="link">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- Site Header -->
+  <header class="site-header" data-eb-editable data-eb-key="header">
+    <div class="container">
+      <a href="index.html" class="logo" data-eb-editable data-eb-key="logo" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Phanton Pizza</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav id="primary-menu" class="site-nav">
+        <ul>
+          <li><a href="index.html" data-eb-editable data-eb-key="nav-home" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Home</a></li>
+          <li><a href="menu.html" data-eb-editable data-eb-key="nav-menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menu</a></li>
+          <li><a href="contact.html" data-eb-editable data-eb-key="nav-contact" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero-section" id="hero">
-    <h1 data-eb-editable="text" data-eb-key="index.h1.5" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
-    <p data-eb-editable="text" data-eb-key="index.p.6" data-eb-role="p" data-eb-kind="text">Authentic pizza, 5 peso delivery or dine‑in</p>
-    <a href="tel:1113467889" class="cta-button" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Call Now</a>
-  </section>
-
-  <section class="info-block">
-    <div class="card">
-      <div class="icon">⏰</div>
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.8" data-eb-role="h3" data-eb-kind="text">Horario</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Martes a Domingo: 7 am – 11 pm</p>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-background">
+      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
+           alt="pizza restaurant interior with warm lighting"
+           loading="lazy"
+           class="hero-img" data-eb-editable data-eb-key="hero-background" data-eb-editable="image" data-eb-key="index.img.6" data-eb-role="img" data-eb-kind="image">
     </div>
-    <div class="card">
-      <div class="icon">📍</div>
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.10" data-eb-role="h3" data-eb-kind="text">Ubicación</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="icon">📞</div>
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.12" data-eb-role="h3" data-eb-kind="text">Teléfono</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">1113467889</p>
-      </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content" data-eb-editable data-eb-key="hero-content">
+      <h1 data-eb-editable data-eb-key="hero-heading" data-eb-editable="text" data-eb-key="index.h1.7" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
+      <p data-eb-editable data-eb-key="hero-subtext" data-eb-editable="text" data-eb-key="index.p.8" data-eb-role="p" data-eb-kind="text">Authentic pizza, 5 peso delivery or dine‑in</p>
+      <a href="tel:1113467889" class="btn btn-primary" data-eb-editable data-eb-key="primary-cta" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">Call Now</a>
     </div>
   </section>
 
-  <section class="menu-gallery">
-    <div class="menu-card">
-      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Margherita pizza close up" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.15" data-eb-role="h3" data-eb-kind="text">Margherita</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Classic tomato, mozzarella and basil</p>
-      </div>
-    </div>
-    <div class="menu-card">
-      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pepperoni pizza on wooden board" data-eb-editable="image" data-eb-key="index.img.17" data-eb-role="img" data-eb-kind="image">
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.18" data-eb-role="h3" data-eb-kind="text">Pepperoni</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Spicy pepperoni with melted cheese</p>
-      </div>
-    </div>
-    <div class="menu-card">
-      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Vegetarian pizza with bell peppers" data-eb-editable="image" data-eb-key="index.img.20" data-eb-role="img" data-eb-kind="image">
-      <div class="content">
-        <h3 data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Vegetariana</h3>
-        <p data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Bell peppers, olives and fresh vegetables</p>
+  <!-- Info Block -->
+  <section class="info-block" aria-label="Información">
+    <div class="container" data-eb-editable data-eb-key="info-block">
+      <div class="info-grid">
+        <!-- Hours -->
+        <div class="info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <div>
+            <span class="info-label" data-eb-editable data-eb-key="info-hours-label">Horario</span>
+            <span class="info-value" data-eb-editable data-eb-key="info-hours-value">Martes a domingo de 7 am a 11 pm</span>
+          </div>
+        </div>
+        <!-- Location -->
+        <div class="info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13"></path>
+          </svg>
+          <div>
+            <span class="info-label" data-eb-editable data-eb-key="info-location-label">Ubicación</span>
+            <span class="info-value" data-eb-editable data-eb-key="info-location-value">Campeche</span>
+          </div>
+        </div>
+        <!-- Phone -->
+        <div class="info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <div>
+            <span class="info-label" data-eb-editable data-eb-key="info-phone-label">Teléfono</span>
+            <span class="info-value" data-eb-editable data-eb-key="info-phone-value">1113467889</span>
+          </div>
+        </div>
+        <!-- Delivery -->
+        <div class="info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+            <polyline points="17 12 22 17 12 22"></polyline>
+            <line x1="12" y1="12" x2="12" y2="21"></line>
+          </svg>
+          <div>
+            <span class="info-label" data-eb-editable data-eb-key="info-delivery-label">Delivery</span>
+            <span class="info-value" data-eb-editable data-eb-key="info-delivery-value">Sí</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div>
-      <a href="index.html" data-eb-editable="link" data-eb-key="index.a.23" data-eb-role="a" data-eb-kind="link">Home</a> |
-      <a href="menu.html" data-eb-editable="link" data-eb-key="index.a.24" data-eb-role="a" data-eb-kind="link">Menu</a> |
-      <a href="contact.html" data-eb-editable="link" data-eb-key="index.a.25" data-eb-role="a" data-eb-kind="link">Contact</a>
+  <!-- Menu Gallery -->
+  <section class="menu-gallery" aria-label="Galería del menú">
+    <div class="container" data-eb-editable data-eb-key="menu-gallery">
+      <h2 data-eb-editable data-eb-key="menu-heading" data-eb-editable="text" data-eb-key="index.h2.10" data-eb-role="h2" data-eb-kind="text">Nuestras especialidades</h2>
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <article class="menu-card" data-eb-editable data-eb-key="menu-card-1">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
+               alt="close‑up of a Margherita pizza"
+               loading="lazy"
+               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.11" data-eb-role="img" data-eb-kind="image">
+          <h3 data-eb-editable data-eb-key="menu-card-1-title" data-eb-editable="text" data-eb-key="index.h3.12" data-eb-role="h3" data-eb-kind="text">Margherita clásica</h3>
+          <p data-eb-editable data-eb-key="menu-card-1-desc" data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">Salsa de tomate, mozzarella fresca y albahaca.</p>
+        </article>
+        <!-- Card 2 -->
+        <article class="menu-card" data-eb-editable data-eb-key="menu-card-2">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
+               alt="pepperoni pizza on a wooden board"
+               loading="lazy"
+               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
+          <h3 data-eb-editable data-eb-key="menu-card-2-title" data-eb-editable="text" data-eb-key="index.h3.15" data-eb-role="h3" data-eb-kind="text">Pepperoni</h3>
+          <p data-eb-editable data-eb-key="menu-card-2-desc" data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Pepperoni picante y queso fundido.</p>
+        </article>
+        <!-- Card 3 -->
+        <article class="menu-card" data-eb-editable data-eb-key="menu-card-3">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
+               alt="vegetarian pizza with bell peppers"
+               loading="lazy"
+               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.17" data-eb-role="img" data-eb-kind="image">
+          <h3 data-eb-editable data-eb-key="menu-card-3-title" data-eb-editable="text" data-eb-key="index.h3.18" data-eb-role="h3" data-eb-kind="text">Vegetariana</h3>
+          <p data-eb-editable data-eb-key="menu-card-3-desc" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Pimientos, champiñones, aceitunas y maíz.</p>
+        </article>
+      </div>
     </div>
-    <div>&copy; 2026 Phanton Pizza. Todos los derechos reservados.</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-eb-editable data-eb-key="footer">
+    <div class="container" data-eb-editable data-eb-key="footer-content">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html" data-eb-editable data-eb-key="footer-home" data-eb-editable="link" data-eb-key="index.a.20" data-eb-role="a" data-eb-kind="link">Home</a></li>
+          <li><a href="menu.html" data-eb-editable data-eb-key="footer-menu" data-eb-editable="link" data-eb-key="index.a.21" data-eb-role="a" data-eb-kind="link">Menu</a></li>
+          <li><a href="contact.html" data-eb-editable data-eb-key="footer-contact" data-eb-editable="link" data-eb-key="index.a.22" data-eb-role="a" data-eb-kind="link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social" aria-label="Redes sociales">
+        <!-- Placeholder icons -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon" data-eb-editable data-eb-key="social-fb">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon" data-eb-editable data-eb-key="social-ig">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        </svg>
+      </div>
+      <p class="footer-copyright" data-eb-editable data-eb-key="footer-copyright" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">© 2026 Phanton Pizza. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav-links');
+    // Simple mobile menu toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('primary-menu');
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
       const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
       toggle.setAttribute('aria-expanded', !expanded);
-    });
-    // Simple scroll header shadow
-    const header = document.querySelector('.site-header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 10);
+      menu.classList.toggle('open');
     });
   </script>
 </body>
