@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang='es'>
 <head>
-  <meta charset="UTF-8">
-  <title>Phanton Pizza - About</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset='UTF-8'>
+<title>Phanton Pizza - About</title>
+<link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" data-eb-editable="link" data-eb-key="about.a.1" data-eb-role="a" data-eb-kind="link">Home</a></li>
-        <li><a href="menu.html" data-eb-editable="link" data-eb-key="about.a.2" data-eb-role="a" data-eb-kind="link">Menu</a></li>
-        <li><a href="about.html" aria-current="page" data-eb-editable="link" data-eb-key="about.a.3" data-eb-role="a" data-eb-kind="link">About</a></li>
-        <li><a href="gallery.html" data-eb-editable="link" data-eb-key="about.a.4" data-eb-role="a" data-eb-kind="link">Gallery</a></li>
-        <li><a href="contact.html" data-eb-editable="link" data-eb-key="about.a.5" data-eb-role="a" data-eb-kind="link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="intro" data-eb-editable>
-      <h1 data-eb-editable="text" data-eb-key="about.h1.6" data-eb-role="h1" data-eb-kind="text">About Phanton Pizza</h1>
-      <p data-eb-editable data-eb-editable="text" data-eb-key="about.p.7" data-eb-role="p" data-eb-kind="text">We sell pizza for delivery at 5 pesos or dine‑in at our location in Campeche.</p>
-    </section>
-    <section class="schedule" data-eb-editable>
-      <h2 data-eb-editable="text" data-eb-key="about.h2.8" data-eb-role="h2" data-eb-kind="text">Schedule</h2>
-      <p data-eb-editable data-eb-editable="text" data-eb-key="about.p.9" data-eb-role="p" data-eb-kind="text">Tuesday to Sunday from 7 am to 11 pm.</p>
-    </section>
-    <section class="location" data-eb-editable>
-      <h2 data-eb-editable="text" data-eb-key="about.h2.10" data-eb-role="h2" data-eb-kind="text">Location</h2>
-      <p data-eb-editable data-eb-editable="text" data-eb-key="about.p.11" data-eb-role="p" data-eb-kind="text">Visit us in Campeche. For exact location, see our Contact page.</p>
-    </section>
-  </main>
-  <footer>
-    <p data-eb-editable data-eb-editable="text" data-eb-key="about.p.12" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton Pizza. All rights reserved.</p>
-  </footer>
+<header>
+<nav>
+<ul>
+<li><a href='index.html' data-eb-editable="link" data-eb-key="about.a.1" data-eb-role="a" data-eb-kind="link">Home</a></li>
+<li><a href='menu.html' data-eb-editable="link" data-eb-key="about.a.2" data-eb-role="a" data-eb-kind="link">Menu</a></li>
+<li><a href='about.html' aria-current='page' data-eb-editable="link" data-eb-key="about.a.3" data-eb-role="a" data-eb-kind="link">About</a></li>
+<li><a href='contact.html' data-eb-editable="link" data-eb-key="about.a.4" data-eb-role="a" data-eb-kind="link">Contact</a></li>
+<li><a href='location.html' data-eb-editable="link" data-eb-key="about.a.5" data-eb-role="a" data-eb-kind="link">Location</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class='story' data-eb-editable>
+<h2 data-eb-editable="text" data-eb-key="about.h2.6" data-eb-role="h2" data-eb-kind="text">Nuestra Historia</h2>
+<p data-eb-editable="text" data-eb-key="about.p.7" data-eb-role="p" data-eb-kind="text">Phanton Pizza nació en Campeche con la visión de ofrecer pizzas de calidad a precios accesibles, combinando la tradición italiana con un toque local. Desde nuestro inicio, hemos servido a la comunidad con ingredientes frescos y un servicio rápido, ya sea para llevar o para disfrutar en el local.</p>
+</section>
+<section class='team' data-eb-editable>
+<h2 data-eb-editable="text" data-eb-key="about.h2.8" data-eb-role="h2" data-eb-kind="text">Equipo</h2>
+<p data-eb-editable="text" data-eb-key="about.p.9" data-eb-role="p" data-eb-kind="text">Nuestro equipo está formado por pizzeros apasionados, personal de servicio amable y un gerente dedicado a asegurar que cada experiencia sea excelente. Trabajamos juntos para mantener los altos estándares que nuestros clientes esperan.</p>
+</section>
+<section class='values' data-eb-editable>
+<h2 data-eb-editable="text" data-eb-key="about.h2.10" data-eb-role="h2" data-eb-kind="text">Nuestros Valores</h2>
+<ul>
+<li>Calidad: utilizamos solo los mejores ingredientes.</li>
+<li>Servicio: atendemos con rapidez y amabilidad.</li>
+<li>Innovación: constantemente creamos nuevas combinaciones de sabores.</li>
+<li>Comunidad: apoyamos a productores locales y participamos en eventos de Campeche.</li>
+</ul>
+</section>
+</main>
+<footer>
+<p data-eb-editable="text" data-eb-key="about.p.11" data-eb-role="p" data-eb-kind="text">&copy; <span id='year'></span> Phanton Pizza. Todos los derechos reservados.</p>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
