@@ -6,111 +6,129 @@
     <title>Phanton Pizza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="wrapper">
-            <ul>
-                <li><a href="#hero" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-                <li><a href="#about" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Sobre nosotros</a></li>
-                <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-                <li><a href="#location" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
-                <li><a href="#contact" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo" data-eb-editable="text" data-eb-key="index.h1.1" data-eb-role="h1" data-eb-kind="text">Phanton</h1>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                    <li><a href="menu.html" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                    <li><a href="contact.html" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menú" id="nav-toggle" data-eb-editable="link" data-eb-key="index.button.5" data-eb-role="button" data-eb-kind="link">
+                <span class="hamburger"></span>
+            </button>
+        </div>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="wrapper">
-            <h1 data-eb-editable="text" data-eb-key="index.h1.6" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
-            <p data-eb-editable="text" data-eb-key="index.p.7" data-eb-role="p" data-eb-kind="text">Pizza artesanal a domicilio y en local – Campeche</p>
-            <a href="https://wa.me/1113467889" class="btn-primary" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Ordenar ahora</a>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.6" data-eb-role="h2" data-eb-kind="text">Pizzas artesanales</h2>
+            <p data-eb-editable="text" data-eb-key="index.p.7" data-eb-role="p" data-eb-kind="text">Disfruta de nuestras pizzas a domicilio o en el local.</p>
+            <a href="tel:1113467889" class="cta-button" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Llamar para Ordenar</a>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="wrapper">
-            <h2 data-eb-editable="text" data-eb-key="index.h2.9" data-eb-role="h2" data-eb-kind="text">Sobre nosotros</h2>
-            <div class="about-content">
-                <img src="media-fallback/imagen-generica.jpg" alt="Interior acogedor de una pizzería con iluminación cálida" data-eb-editable="image" data-eb-key="index.img.10" data-eb-role="img" data-eb-kind="image">
-                <div>
-                    <p data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Vendemos pizza a domicilio – 5 pesos a domicilio o come en el local. Disfruta de nuestras pizzas artesanales hechas con los mejores ingredientes.</p>
-                    <ul>
-                        <li>Teléfono: 1113467889</li>
-                        <li>Horario: martes a domingo de 7 am a 11 pm</li>
-                        <li>Ciudad: Campeche</li>
-                    </ul>
+    <section class="menu-section">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.9" data-eb-role="h2" data-eb-kind="text">Nuestro Menú</h2>
+            <p data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">Selección de pizzas preparadas con ingredientes frescos.</p>
+            <div class="menu-grid">
+                <!-- Placeholder cards; will be filled in menu.html -->
+                <a href="menu.html" class="menu-item-card" data-eb-editable="link" data-eb-key="index.a.11" data-eb-role="a" data-eb-kind="link">
+                    <img src="https://itm-placeholder" alt="Pizza Hawaiana" data-eb-editable="image" data-eb-key="index.img.12" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.13" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.14" data-eb-role="p" data-eb-kind="text">$180</p>
+                </a>
+                <a href="menu.html" class="menu-item-card" data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link">
+                    <img src="https-placeholder" alt="Pizza Pepperoni" data-eb-editable="image" data-eb-key="index.img.16" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.17" data-eb-role="h3" data-eb-kind="text">Pizza Pepperoni</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">$200</p>
+                </a>
+                <a href="menu.html" class="menu-item-card" data-eb-editable="link" data-eb-key="index.a.19" data-eb-role="a" data-eb-kind="link">
+                    <img src="https-placeholder" alt="Pizza Vegetariana" data-eb-editable="image" data-eb-key="index.img.20" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Pizza Vegetariana</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">$190</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="place-map">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.23" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                class="map-iframe"
+                aria-label="Mapa de ubicación de Phanton Pizza en Campeche">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.24" data-eb-role="h2" data-eb-kind="text">Contacto</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <div>
+                        <h3 data-eb-editable="text" data-eb-key="index.h3.25" data-eb-role="h3" data-eb-kind="text">Teléfono</h3>
+                        <p data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text"><a href="tel:1113467889" data-eb-editable="link" data-eb-key="index.a.27" data-eb-role="a" data-eb-kind="link">1113467889</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span>🕒</span>
+                    <div>
+                        <h3 data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">Horario</h3>
+                        <p data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Martes a domingo de 7 am a 11 pm</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <h3 data-eb-editable="text" data-eb-key="index.h3.30" data-eb-role="h3" data-eb-kind="text">Dirección</h3>
+                        <p data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="menu" class="menu">
-        <div class="wrapper">
-            <h2 data-eb-editable="text" data-eb-key="index.h2.12" data-eb-role="h2" data-eb-kind="text">Menú</h2>
-            <div class="cards-grid">
-                <article class="card">
-                    <img src="media-fallback/imagen-generica.jpg" alt="Rebanada de pizza pepperoni con queso fundido" data-eb-editable="image" data-eb-key="index.img.13" data-eb-role="img" data-eb-kind="image">
-                    <h3 data-eb-editable="text" data-eb-key="index.h3.14" data-eb-role="h3" data-eb-kind="text">Pizza Pepperoni</h3>
-                    <p data-eb-editable="text" data-eb-key="index.p.15" data-eb-role="p" data-eb-kind="text">Pepperoni, queso mozzarella, salsa de tomate.</p>
-                    <span class="price">$150</span>
-                </article>
-                <article class="card">
-                    <img src="media-fallback/imagen-generica.jpg" alt="Pizza vegetariana con albahaca fresca y vegetales" data-eb-editable="image" data-eb-key="index.img.16" data-eb-role="img" data-eb-kind="image">
-                    <h3 data-eb-editable="text" data-eb-key="index.h3.17" data-eb-role="h3" data-eb-kind="text">Pizza Vegetariana</h3>
-                    <p data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Vegetales frescos, albahaca, mozzarella.</p>
-                    <span class="price">$180</span>
-                </article>
-                <article class="card">
-                    <img src="media-fallback/imagen-generica.jpg" alt="Pizza Hawaiana especial" data-eb-editable="image" data-eb-key="index.img.19" data-eb-role="img" data-eb-kind="image">
-                    <h3 data-eb-editable="text" data-eb-key="index.h3.20" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
-                    <p data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Jamón, piña, queso mozzarella.</p>
-                    <span class="price">$170</span>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="location" class="location">
-        <div class="wrapper">
-            <h2 data-eb-editable="text" data-eb-key="index.h2.22" data-eb-role="h2" data-eb-kind="text">¿Nos encuentras?</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                title="Ubicación de Phanton Pizza en Google Maps"></iframe>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="wrapper">
-            <h2 data-eb-editable="text" data-eb-key="index.h2.23" data-eb-role="h2" data-eb-kind="text">Contáctanos</h2>
-            <form id="contactForm" action="#" method="POST">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="tel" name="phone" placeholder="Teléfono" required>
-                <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
-                <button type="submit" class="btn-secondary" data-eb-editable="link" data-eb-key="index.button.24" data-eb-role="button" data-eb-kind="link">Enviar</button>
-            </form>
-            <div id="formMessage"></div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="wrapper">
-            <p data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton Pizza. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <p data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">© 2026 Phanton Pizza. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const form = document.getElementById('contactForm');
-        const messageDiv = document.getElementById('formMessage');
-        form.addEventListener('submit', function(e){
-            e.preventDefault();
-            messageDiv.textContent = '¡Gracias! Nos pondremos en contacto pronto.';
-            messageDiv.style.color = '#4CAF50';
-            form.reset();
+        const navToggle = document.getElementById('nav-toggle');
+        const nav = document.getElementById('nav');
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            navToggle.classList.toggle('open');
+        });
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+                header.classList.remove('scroll-down');
+                return;
+            }
+            if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+                header.classList.add('scroll-down');
+            } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+                header.classList.remove('scroll-down');
+            }
+            lastScroll = currentScroll;
         });
     </script>
 </body>
