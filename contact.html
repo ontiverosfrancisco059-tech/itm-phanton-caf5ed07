@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Phanton Pizza - Contacto</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Phanton Pizza</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<nav>
-<ul>
-<li><a href="index.html" data-eb-editable="link" data-eb-key="contact.a.1" data-eb-role="a" data-eb-kind="link">Home</a></li>
-<li><a href="menu.html" data-eb-editable="link" data-eb-key="contact.a.2" data-eb-role="a" data-eb-kind="link">Menu</a></li>
-<li><a href="about.html" data-eb-editable="link" data-eb-key="contact.a.3" data-eb-role="a" data-eb-kind="link">About</a></li>
-<li><a href="contact.html" aria-current="page" data-eb-editable="link" data-eb-key="contact.a.4" data-eb-role="a" data-eb-kind="link">Contact</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section class="info-block">
-<h2 data-eb-editable="text" data-eb-key="contact.h2.5" data-eb-role="h2" data-eb-kind="text">Información de contacto</h2>
-<p data-eb-editable="text" data-eb-key="contact.p.6" data-eb-role="p" data-eb-kind="text"><span data-eb-editable>Teléfono: 1113467889</span></p>
-<p data-eb-editable="text" data-eb-key="contact.p.7" data-eb-role="p" data-eb-kind="text"><span data-eb-editable>Horario: martes a domingo de 7 am a 11 pm</span></p>
-<p data-eb-editable="text" data-eb-key="contact.p.8" data-eb-role="p" data-eb-kind="text"><span data-eb-editable>Dirección: Campeche, México</span></p>
-</section>
-<section class="map">
-<h2 data-eb-editable="text" data-eb-key="contact.h2.9" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-</section>
-<section class="contact-form">
-<h2 data-eb-editable="text" data-eb-key="contact.h2.10" data-eb-role="h2" data-eb-kind="text">Envíanos un mensaje</h2>
-<form action="#" method="post">
-<label for="name">Nombre:</label>
-<input type="text" id="name" name="name" required><br><br>
-<label for="email">Correo:</label>
-<input type="email" id="email" name="email" required><br><br>
-<label for="message">Mensaje:</label>
-<textarea id="message" name="message" rows="4" required></textarea><br><br>
-<button type="submit" data-eb-editable="link" data-eb-key="contact.button.11" data-eb-role="button" data-eb-kind="link">Enviar</button>
-</form>
-</section>
-</main>
-<footer>
-<p data-eb-editable="text" data-eb-key="contact.p.12" data-eb-role="p" data-eb-kind="text">© 2026 Phanton Pizza. Todos los derechos reservados.</p>
-</footer>
+    <header>
+        <div class="logo">Phanton</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-eb-editable="link" data-eb-key="contact.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                <li><a href="menu.html" data-eb-editable="link" data-eb-key="contact.a.2" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                <li><a href="contact.html" data-eb-editable="link" data-eb-key="contact.a.3" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="info-block">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="contact.h2.4" data-eb-role="h2" data-eb-kind="text">Información de Contacto</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3 data-eb-editable="text" data-eb-key="contact.h3.5" data-eb-role="h3" data-eb-kind="text">Dirección</h3>
+                    <p data-eb-editable="text" data-eb-key="contact.p.6" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
+                </div>
+                <div class="info-item">
+                    <h3 data-eb-editable="text" data-eb-key="contact.h3.7" data-eb-role="h3" data-eb-kind="text">Teléfono</h3>
+                    <p data-eb-editable="text" data-eb-key="contact.p.8" data-eb-role="p" data-eb-kind="text">1113467889</p>
+                </div>
+                <div class="info-item">
+                    <h3 data-eb-editable="text" data-eb-key="contact.h3.9" data-eb-role="h3" data-eb-kind="text">Horario</h3>
+                    <p data-eb-editable="text" data-eb-key="contact.p.10" data-eb-role="p" data-eb-kind="text">Martes a Domingo: 7:00 AM - 11:00 PM</p>
+                </div>
+                <div class="info-item">
+                    <h3 data-eb-editable="text" data-eb-key="contact.h3.11" data-eb-role="h3" data-eb-kind="text">Ordenar</h3>
+                    <p data-eb-editable="text" data-eb-key="contact.p.12" data-eb-role="p" data-eb-kind="text"><a href="https://wa.me/1113467889" class="cta-button" target="_blank" data-eb-editable="link" data-eb-key="contact.a.13" data-eb-role="a" data-eb-kind="link">WhatsApp</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-preview">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="contact.h2.14" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
+            <div class="map-placeholder">
+                <!-- Google Maps embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="place-image">
+                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Vista de Campeche" data-eb-editable="image" data-eb-key="contact.img.15" data-eb-role="img" data-eb-kind="image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-eb-editable="text" data-eb-key="contact.p.16" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton Pizza. Todos los derechos reservados.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank" data-eb-editable="link" data-eb-key="contact.a.17" data-eb-role="a" data-eb-kind="link">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" data-eb-editable="link" data-eb-key="contact.a.18" data-eb-role="a" data-eb-kind="link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Same smooth scroll script
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
