@@ -1,104 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phanton Pizza</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phanton Pizza</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header" aria-label="Encabezado del sitio">
-    <div class="container">
-      <h1 class="logo" data-eb-editable data-eb-key="site_title" data-eb-editable="text" data-eb-key="index.h1.1" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
-          <span class="hamburger"></span>
-        </button>
-        <ul id="primary-menu" class="nav-menu">
-          <li><a href="index.html" data-eb-editable data-eb-key="nav_home" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-          <li><a href="menu.html" data-eb-editable data-eb-key="nav_menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-          <li><a href="about.html" data-eb-editable data-eb-key="nav_about" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
-          <li><a href="contact.html" data-eb-editable data-eb-key="nav_contact" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="logo">Phanton</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                <li><a href="menu.html" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                <li><a href="contact.html" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="hero" aria-label="Sección hero">
-    <picture>
-      <source media="(min-width: 768px)" srcset="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg">
-      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-           alt="Fachada del restaurante Phanton Pizza"
-           loading="lazy" data-eb-editable="image" data-eb-key="index.img.7" data-eb-role="img" data-eb-kind="image">
-    </picture>
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h2 data-eb-editable data-eb-key="hero_subtitle" data-eb-editable="text" data-eb-key="index.h2.8" data-eb-role="h2" data-eb-kind="text">Pizza artesanal en Campeche</h2>
-      <p data-eb-editable data-eb-key="hero_description" data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Disfruta de nuestras pizzas recién hechas, disponibles para comer en el local o a domicilio.</p>
-    </div>
-  </section>
+    <section class="hero" id="hero">
+        <div class="hero-overlay">
+            <h1 data-eb-editable="text" data-eb-key="index.h1.4" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
+            <p data-eb-editable="text" data-eb-key="index.p.5" data-eb-role="p" data-eb-kind="text">Sabores auténticos de Campeche</p>
+            <a href="menu.html" class="cta-button" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Ver Menú</a>
+        </div>
+    </section>
 
-  <section class="featured-dish" aria-label="Plato destacado">
-    <div class="container">
-      <h2 data-eb-editable data-eb-key="featured_dish_title" data-eb-editable="text" data-eb-key="index.h2.10" data-eb-role="h2" data-eb-kind="text">Pizza Hawaiana</h2>
-      <picture>
-        <source media="(min-width: 768px)" srcset="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg">
-        <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-             alt="Rebanada de pizza hawaiana con queso fundido"
-             loading="lazy" data-eb-editable="image" data-eb-key="index.img.11" data-eb-role="img" data-eb-kind="image">
-      </picture>
-      <p data-eb-editable data-eb-key="featured_dish_description" data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">Deliciosa combinación de jamón, piña y queso mozzarella sobre nuestra masa artesanal.</p>
-    </div>
-  </section>
+    <section class="highlights">
+        <div class="container">
+            <div class="highlight-card">
+                <h3 data-eb-editable="text" data-eb-key="index.h3.7" data-eb-role="h3" data-eb-kind="text">Ingredientes Frescos</h3>
+                <p data-eb-editable="text" data-eb-key="index.p.8" data-eb-role="p" data-eb-kind="text">Seleccionamos los mejores ingredientes para cada pizza.</p>
+            </div>
+            <div class="highlight-card">
+                <h3 data-eb-editable="text" data-eb-key="index.h3.9" data-eb-role="h3" data-eb-kind="text">Envío Rápido</h3>
+                <p data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">Llegamos a tu puerta en minutos.</p>
+            </div>
+            <div class="highlight-card">
+                <h3 data-eb-editable="text" data-eb-key="index.h3.11" data-eb-role="h3" data-eb-kind="text">Calidad Premium</h3>
+                <p data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">Cada bocado es una experiencia.</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="gallery" aria-label="Galería">
-    <div class="container">
-      <h2 data-eb-editable data-eb-key="gallery_title" data-eb-editable="text" data-eb-key="index.h2.13" data-eb-role="h2" data-eb-kind="text">Galería</h2>
-      <div class="gallery-grid">
-        <figure>
-          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-               alt="Interior acogedor del restaurante"
-               loading="lazy" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
-          <figcaption data-eb-editable data-eb-key="gallery_caption_1">Ambiente cómodo para disfrutar en familia</figcaption>
-        </figure>
-        <figure>
-          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-               alt="Chef preparando pizza artesanal"
-               loading="lazy" data-eb-editable="image" data-eb-key="index.img.15" data-eb-role="img" data-eb-kind="image">
-          <figcaption data-eb-editable data-eb-key="gallery_caption_2">El arte de hacer pizza a mano</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+    <section class="menu-preview" id="menu-preview">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.13" data-eb-role="h2" data-eb-kind="text">Lo más destacado</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Hawaiana" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.15" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Jamón, piña y queso mozzarella.</p>
+                    <p class="price" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">$180</p>
+                </div>
+                <div class="card">
+                    <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Pepperoni" data-eb-editable="image" data-eb-key="index.img.18" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.19" data-eb-role="h3" data-eb-kind="text">Pizza Pepperoni</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Pepperoni Especial y queso.</p>
+                    <p class="price" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">$200</p>
+                </div>
+                <div class="card">
+                    <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Vegetariana" data-eb-editable="image" data-eb-key="index.img.22" data-eb-role="img" data-eb-kind="image">
+                    <h3 data-eb-editable="text" data-eb-key="index.h3.23" data-eb-role="h3" data-eb-kind="text">Pizza Vegetariana</h3>
+                    <p data-eb-editable="text" data-eb-key="index.p.24" data-eb-role="p" data-eb-kind="text">Pimientos, champiñones, aceitunas.</p>
+                    <p class="price" data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">$190</p>
+                </div>
+            </div>
+            <a href="menu.html" class="cta-button secondary" data-eb-editable="link" data-eb-key="index.a.26" data-eb-role="a" data-eb-kind="link">Ver Menú Completo</a>
+        </div>
+    </section>
 
-  <section class="cta" aria-label="Llamada a la acción">
-    <div class="container">
-      <h2 data-eb-editable data-eb-key="cta_title" data-eb-editable="text" data-eb-key="index.h2.16" data-eb-role="h2" data-eb-kind="text">¡Listo para ordenar?</h2>
-      <p data-eb-editable data-eb-key="cta_text" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Haz tu pedido por WhatsApp y disfruta de nuestras pizzas donde quieras.</p>
-      <a href="https://wa.me/1113467889" class="btn-primary" data-eb-editable data-eb-key="primary_cta" data-eb-editable="link" data-eb-key="index.a.18" data-eb-role="a" data-eb-kind="link">has tupedidoen whasap</a>
-    </div>
-  </section>
+    <section class="location" id="location">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="index.h2.27" data-eb-role="h2" data-eb-kind="text">Ubicación</h2>
+            <p data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
+            <div class="map-placeholder">
+                <!-- Google Maps embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
 
-  <footer class="site-footer" aria-label="Pie de página">
-    <div class="container">
-      <p data-eb-editable data-eb-key="schedule" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Horario: martes a domingo de 7 am a 11 pm</p>
-      <p data-eb-editable data-eb-key="phone" data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Teléfono: 1113467889</p>
-      <p data-eb-editable data-eb-key="description" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">vendemos pizza a domicilio 5 peso a domicilio o come enel local</p>
-      <p data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">© <span id="year"></span> Phanton Pizza. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <footer>
+        <div class="container">
+            <p data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton Pizza. Todos los derechos reservados.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank" data-eb-editable="link" data-eb-key="index.a.30" data-eb-role="a" data-eb-kind="link">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" data-eb-editable="link" data-eb-key="index.a.31" data-eb-role="a" data-eb-kind="link">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
-  <script>
-    // Simple mobile menu toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('primary-menu');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
-      toggle.setAttribute('aria-expanded', !expanded);
-      menu.classList.toggle('open');
-    });
-    // Update year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
