@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phanton Pizza</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phanton Pizza</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar" aria-label="Principal">
-                <a href="index.html" class="logo" data-eb-editable="true" data-eb-key="logo_text">Phanton Pizza</a>
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active" data-eb-editable="true" data-eb-key="nav_home">Inicio</a></li>
-                    <li><a href="menu.html" class="nav-link" data-eb-editable="true" data-eb-key="nav_menu">Menú</a></li>
-                    <li><a href="about.html" class="nav-link" data-eb-editable="true" data-eb-key="nav_about">Nosotros</a></li>
-                    <li><a href="gallery.html" class="nav-link" data-eb-editable="true" data-eb-key="nav_gallery">Galería</a></li>
-                    <li><a href="contact.html" class="nav-link" data-eb-editable="true" data-eb-key="nav_contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo" data-eb-editable="true" data-eb-key="business_name">Phanton Pizza</a>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+          <li><a href="menu.html" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+          <li><a href="about.html" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+          <li><a href="contact.html" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+          <li><a href="location.html" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero" aria-label="Presentación">
-        <div class="hero-bg" style="background-image:url('https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg');"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 data-eb-editable="true" data-eb-key="hero_title">Phanton Pizza</h1>
-            <p data-eb-editable="true" data-eb-key="hero_subtitle">Pizza artesanal en Campeche</p>
-            <a href="https://wa.me/1113467889" class="btn-primary" data-eb-editable="true" data-eb-key="hero_cta">has tupedidoen whasap</a>
-        </div>
-    </section>
+  <section class="hero" id="hero" data-eb-editable="true" data-eb-key="hero_bg">
+    <picture>
+      <source srcset="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" type="image/jpeg">
+      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Interior moderno de pizzeria" loading="lazy" data-eb-editable="image" data-eb-key="index.img.6" data-eb-role="img" data-eb-kind="image">
+    </picture>
+    <div class="hero-content">
+      <h1 data-eb-editable="true" data-eb-key="hero_title">Pizzas Artesanales en Campeche</h1>
+      <p data-eb-editable="true" data-eb-key="hero_subtitle">Disfruta de nuestras pizzas recién horneadas, entrega a domicilio o para comer en el local.</p>
+      <a href="https://wa.me/1113467889?text=Hola%20quiero%20hacer%20un%20pedido" class="cta-button" data-eb-editable="true" data-eb-key="primary_cta">Haz tu pedido en WhatsApp</a>
+    </div>
+  </section>
 
-    <section class="features" aria-label="Características">
-        <div class="container">
-            <h2 data-eb-editable="true" data-eb-key="features_title">¿Por qué elegirnos?</h2>
-            <div class="features-grid">
-                <article class="feature-card">
-                    <h3 data-eb-editable="true" data-eb-key="feature1_title">Entrega a domicilio</h3>
-                    <p data-eb-editable="true" data-eb-key="feature1_text">Llevamos tu pizza a donde estés en Campeche.</p>
-                </article>
-                <article class="feature-card">
-                    <h3 data-eb-editable="true" data-eb-key="feature2_title">Horario extendido</h3>
-                    <p data-eb-editable="true" data-eb-key="feature2_text">Abierto martes a domingo de 7 am a 11 pm.</p>
-                </article>
-                <article class="feature-card">
-                    <h3 data-eb-editable="true" data-eb-key="feature3_title">Calidad y sabor</h3>
-                    <p data-eb-editable="true" data-eb-key="feature3_text">Ingredientes frescos y masa hecha a mano.</p>
-                </article>
-            </div>
+  <section class="featured-offer" id="featured-offer">
+    <div class="container">
+      <h2 data-eb-editable="true" data-eb-key="featured_title">Oferta Destacada</h2>
+      <div class="offer-card">
+        <picture>
+          <source srcset="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" type="image/jpeg">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Close‑up de una rebanada de pizza" loading="lazy" data-eb-editable="image" data-eb-key="index.img.7" data-eb-role="img" data-eb-kind="image">
+        </picture>
+        <div class="offer-info">
+          <h3 data-eb-editable="true" data-eb-key="featured_item">Pizza Hawaiana</h3>
+          <p data-eb-editable="true" data-eb-key="featured_description">Piña dulce, jamón y queso mozzarella sobre nuestra masa crujiente.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="cta" aria-label="Llamada a la acción">
-        <div class="container">
-            <p data-eb-editable="true" data-eb-key="cta_text">¿Listo para disfrutar? Haz tu pedido ahora.</p>
-            <a href="https://wa.me/1113467889" class="btn-secondary" data-eb-editable="true" data-eb-key="cta_button">has tupedidoen whasap</a>
+  <section class="about-us" id="about-us">
+    <div class="container">
+      <h2 data-eb-editable="true" data-eb-key="about_title">Sobre Nosotros</h2>
+      <p data-eb-editable="true" data-eb-key="about_description">vendemos pizza a domicilio 5 peso a domicilio o come en el local</p>
+      <div class="details">
+        <div class="detail-item">
+          <svg aria-hidden="true" focusable="false" width="24" height="24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 8v4m0 4h.01M12 12h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span data-eb-editable="true" data-eb-key="schedule">Martes a domingo de 7 am a 11 pm</span>
         </div>
-    </section>
+        <div class="detail-item">
+          <svg aria-hidden="true" focusable="false" width="24" height="24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 13.93z"/></svg>
+          <span data-eb-editable="true" data-eb-key="phone">1113467889</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer" aria-label="Información de contacto">
-        <div class="container">
-            <div class="footer-info">
-                <p data-eb-editable="true" data-eb-key="footer_address">Campeche, México</p>
-                <p data-eb-editable="true" data-eb-key="footer_phone">📞 1113467889</p>
-                <p data-eb-editable="true" data-eb-key="footer_description">vendemos pizza a domicilio  5 peso a domicilio o come enel local</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html" data-eb-editable="true" data-eb-key="footer_home">Inicio</a>
-                <a href="menu.html" data-eb-editable="true" data-eb-key="footer_menu">Menú</a>
-                <a href="about.html" data-eb-editable="true" data-eb-key="footer_about">Nosotros</a>
-                <a href="gallery.html" data-eb-editable="true" data-eb-key="footer_gallery">Galería</a>
-                <a href="contact.html" data-eb-editable="true" data-eb-key="footer_contact">Contacto</a>
-            </div>
-            <p data-eb-editable="true" data-eb-key="footer_copyright">© 2026 Phanton Pizza. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 data-eb-editable="true" data-eb-key="gallery_title">Nuestro ambiente</h2>
+      <picture>
+        <source srcset="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" type="image/jpeg">
+        <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Ambiente de comedor elegante" loading="lazy" data-eb-editable="image" data-eb-key="index.img.8" data-eb-role="img" data-eb-kind="image">
+      </picture>
+    </div>
+  </section>
+
+  <section class="cta-order" id="cta-order">
+    <div class="container">
+      <h2 data-eb-editable="true" data-eb-key="cta_title">Listo para ordenar?</h2>
+      <p data-eb-editable="true" data-eb-key="cta_subtitle">Haz tu pedido ahora y disfruta de nuestra entrega rápida.</p>
+      <a href="https://wa.me/1113467889?text=Hola%20quiero%20hacer%20un%20pedido" class="cta-button" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">Ordenar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton Pizza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
