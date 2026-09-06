@@ -1,51 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Menu - Phanton Pizza</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Phanton Pizza</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<nav>
-<ul>
-<li><a href="index.html" data-eb-editable="link" data-eb-key="menu.a.1" data-eb-role="a" data-eb-kind="link">Home</a></li>
-<li><a href="menu.html" class="active" data-eb-editable="link" data-eb-key="menu.a.2" data-eb-role="a" data-eb-kind="link">Menu</a></li>
-<li><a href="about.html" data-eb-editable="link" data-eb-key="menu.a.3" data-eb-role="a" data-eb-kind="link">About</a></li>
-<li><a href="contact.html" data-eb-editable="link" data-eb-key="menu.a.4" data-eb-role="a" data-eb-kind="link">Contact</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section class="menu-header">
-<h1 data-beb-editable data-eb-editable="text" data-eb-key="menu.h1.5" data-eb-role="h1" data-eb-kind="text">Nuestro Menú</h1>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.6" data-eb-role="p" data-eb-kind="text">Descubre nuestras deliciosas pizzas y acompañamientos.</p>
-</section>
-<section class="menu-grid">
-<article class="menu-item">
-<h2 data-beb-editable data-eb-editable="text" data-eb-key="menu.h2.7" data-eb-role="h2" data-eb-kind="text">Pizza Hawaiana</h2>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.8" data-eb-role="p" data-eb-kind="text">Jamón, piña, mozzarella y salsa de tomate.</p>
-<span class="price" data-beb-editable>$180</span>
-</article>
-<article class="menu-item">
-<h2 data-beb-editable data-eb-editable="text" data-eb-key="menu.h2.9" data-eb-role="h2" data-eb-kind="text">Pizza Pepperoni</h2>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.10" data-eb-role="p" data-eb-kind="text">Pepperoni, mozzarella, salsa de tomate.</p>
-<span class="price" data-beb-editable>$200</span>
-</article>
-<article class="menu-item">
-<h2 data-beb-editable data-eb-editable="text" data-eb-key="menu.h2.11" data-eb-role="h2" data-eb-kind="text">Pizza Vegetariana</h2>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.12" data-eb-role="p" data-eb-kind="text">Pimientos, champiñones, aceitunas, mozzarella.</p>
-<span class="price" data-beb-editable>$190</span>
-</article>
-<article class="menu-item">
-<h2 data-beb-editable data-eb-editable="text" data-eb-key="menu.h2.13" data-eb-role="h2" data-eb-kind="text">Pizza Mexicana</h2>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.14" data-eb-role="p" data-eb-kind="text">Chorizo, jalapeño, cebolla, mozzarella.</p>
-<span class="price" data-beb-editable>$210</span>
-</article>
-</section>
-</main>
-<footer>
-<p data-beb-editable data-eb-editable="text" data-eb-key="menu.p.15" data-eb-role="p" data-eb-kind="text">Ordenes por WhatsApp: 1113467889</p>
-</footer>
+    <header>
+        <div class="logo">Phanton</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-eb-editable="link" data-eb-key="menu.a.1" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+                <li><a href="menu.html" data-eb-editable="link" data-eb-key="menu.a.2" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+                <li><a href="contact.html" data-eb-editable="link" data-eb-key="menu.a.3" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-dish">
+        <div class="container">
+            <h1 data-eb-editable="text" data-eb-key="menu.h1.4" data-eb-role="h1" data-eb-kind="text">Nuestra Especialidad</h1>
+            <div class="dish-card">
+                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Hawaiana" data-eb-editable="image" data-eb-key="menu.img.5" data-eb-role="img" data-eb-kind="image">
+                <div class="dish-info">
+                    <h2 data-eb-editable="text" data-eb-key="menu.h2.6" data-eb-role="h2" data-eb-kind="text">Pizza Hawaiana</h2>
+                    <p data-eb-editable="text" data-eb-key="menu.p.7" data-eb-role="p" data-eb-kind="text">Deliciosa combinación de jamón, piña fresca y queso mozzarella fundido.</p>
+                    <p class="price" data-eb-editable="text" data-eb-key="menu.p.8" data-eb-role="p" data-eb-kind="text">$180</p>
+                    <a href="https://wa.me/1113467889" class="cta-button" target="_blank" data-eb-editable="link" data-eb-key="menu.a.9" data-eb-role="a" data-eb-kind="link">Ordenar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 data-eb-editable="text" data-eb-key="menu.h2.10" data-eb-role="h2" data-eb-kind="text">Nuestro Menú</h2>
+            <div class="category">
+                <h3 data-eb-editable="text" data-eb-key="menu.h3.11" data-eb-role="h3" data-eb-kind="text">Entradas</h3>
+                <div class="menu-items">
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.12" data-eb-role="h4" data-eb-kind="text">Ajo y Queso Bread</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.13" data-eb-role="p" data-eb-kind="text">Pan recién horneado con mantequilla de ajo y queso parmesano.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.14" data-eb-role="p" data-eb-kind="text">$80</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.15" data-eb-role="h4" data-eb-kind="text">Alas BBQ</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.16" data-eb-role="p" data-eb-kind="text">Alas de pollo glaseadas con salsa barbacoa casera.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.17" data-eb-role="p" data-eb-kind="text">$120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3 data-eb-editable="text" data-eb-key="menu.h3.18" data-eb-role="h3" data-eb-kind="text">Pizzas Clasicas</h3>
+                <div class="menu-items">
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.19" data-eb-role="h4" data-eb-kind="text">Margarita</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.20" data-eb-role="p" data-eb-kind="text">Salsa de tomate, mozzarella y albahaca fresca.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.21" data-eb-role="p" data-eb-kind="text">$150</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.22" data-eb-role="h4" data-eb-kind="text">Pepperoni</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.23" data-eb-role="p" data-eb-kind="text">Doble pepperoni y queso mozzarella.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.24" data-eb-role="p" data-eb-kind="text">$170</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.25" data-eb-role="h4" data-eb-kind="text">Hawaiana</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.26" data-eb-role="p" data-eb-kind="text">Jamón, piña y queso mozzarella.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.27" data-eb-role="p" data-eb-kind="text">$180</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.28" data-eb-role="h4" data-eb-kind="text">Vegetariana</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.29" data-eb-role="p" data-eb-kind="text">Pimientos, champiñones, aceitunas negras y cebolla.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.30" data-eb-role="p" data-eb-kind="text">$160</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.31" data-eb-role="h4" data-eb-kind="text">Mexicana</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.32" data-eb-role="p" data-eb-kind="text">Chorizo, jalapeños, cebolla y cilantro.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.33" data-eb-role="p" data-eb-kind="text">$175</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3 data-eb-editable="text" data-eb-key="menu.h3.34" data-eb-role="h3" data-eb-kind="text">Bebidas</h3>
+                <div class="menu-items">
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.35" data-eb-role="h4" data-eb-kind="text">Coca-Cola</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.36" data-eb-role="p" data-eb-kind="text">Refresco de cola 600ml.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.37" data-eb-role="p" data-eb-kind="text">$25</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.38" data-eb-role="h4" data-eb-kind="text">Jugo Natural</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.39" data-eb-role="p" data-eb-kind="text">Jugo de naranja o papaya recién exprimido.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.40" data-eb-role="p" data-eb-kind="text">$30</p>
+                    </div>
+                    <div class="item">
+                        <h4 data-eb-editable="text" data-eb-key="menu.h4.41" data-eb-role="h4" data-eb-kind="text">Agua Mineral</h4>
+                        <p data-eb-editable="text" data-eb-key="menu.p.42" data-eb-role="p" data-eb-kind="text">Agua purificada 600ml.</p>
+                        <p class="price" data-eb-editable="text" data-eb-key="menu.p.43" data-eb-role="p" data-eb-kind="text">$15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-eb-editable="text" data-eb-key="menu.p.44" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton Pizza. Todos los derechos reservados.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank" data-eb-editable="link" data-eb-key="menu.a.45" data-eb-role="a" data-eb-kind="link">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" data-eb-editable="link" data-eb-key="menu.a.46" data-eb-role="a" data-eb-kind="link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Same smooth scroll script as index.html
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
