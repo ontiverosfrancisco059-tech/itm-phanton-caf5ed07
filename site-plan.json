@@ -1,0 +1,79 @@
+{
+  "site_title": "Phanton Pizzas | Campeche",
+  "template_key": "restaurante",
+  "business_name": "Phanton",
+  "city": "Campeche",
+  "site_goal": "presentar el restaurante y su menú",
+  "navigation": [
+    { "label": "Inicio", "target": "#hero" },
+    { "label": "Menú", "target": "#menu" },
+    { "label": "Galería", "target": "#gallery" },
+    { "label": "Ubicación", "target": "#location" },
+    { "label": "Contacto", "target": "#contact" }
+  ],
+  "design_system": {
+    "palette": {
+      "primary_bg": "#0D0D0D",
+      "card_bg": "#1A1A1A",
+      "gold": "#C8A45C",
+      "white": "#F5F5F0",
+      "accent_red": "#8B2500"
+    },
+    "typography": {
+      "heading": "Playfair Display",
+      "body": "Inter",
+      "h1_size": "48px",
+      "h2_size": "36px",
+      "body_size": "16px"
+    },
+    "spacing": {
+      "section_padding": "100px",
+      "card_gap": "24px",
+      "max_width": "1200px"
+    },
+    "buttons": {
+      "primary_bg": "#C8A45C",
+      "primary_text": "#0D0D0D",
+      "border_radius": "4px",
+      "padding": "16px 40px"
+    },
+    "cards": {
+      "bg": "#1A1A1A",
+      "border": "1px solid #C8A45C",
+      "border_radius": "8px"
+    }
+  },
+  "pages": [
+    {
+      "path": "index.html",
+      "purpose": "Página principal que presenta Phanton, su menú, ubicación y contacto.",
+      "sections": ["hero", "about", "menu", "gallery", "location", "contact"]
+    }
+  ],
+  "business_info": {
+    "phone": "1113467889",
+    "schedule": "Martes a domingo de 7 am a 11 pm",
+    "address": "Campeche, Campeche",
+    "description": "Vendemos pizza a domicilio, $5 peso a domicilio o come en el local",
+    "delivery_fee": "$5",
+    "price_range": "$150 - $350",
+    "instagram": "sin",
+    "facebook": "sin",
+    "maps_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"
+  },
+  "media_manifest": [
+    { "slot_id": "hero-pizza", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "pizza-margarita", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "pizza-pepperoni", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "pizza-hawaiana", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "pizza-especial", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "local-interior", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "local-exterior", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "delivery-scene", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "masa-pizza", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "horno-leña", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "ingredientes-frescos", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "about-equipo", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" },
+    { "slot_id": "bg-pattern", "url": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg", "fallback": "GR-AI" }
+  ]
+}
