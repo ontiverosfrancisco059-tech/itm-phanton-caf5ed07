@@ -1,169 +1,288 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phanton Pizza</title>
+  <title>Phanton Pizzas — Campeche | Pizza a Domicilio</title>
+  <meta name="description" content="Phanton Pizzas en Campeche. Pizzas artesanales a domicilio y en local. Pide por WhatsApp.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
 </head>
 <body>
-  <!-- Site Header -->
-  <header class="site-header" data-eb-editable data-eb-key="header">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo" data-eb-editable data-eb-key="logo" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Phanton Pizza</a>
-      <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
+      <a href="#hero" class="nav-logo" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Phanton<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+        <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+        <li><a href="#about" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+        <li><a href="#gallery" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Galería</a></li>
+        <li><a href="#contact" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/521113467889" class="nav-cta" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Pedir Ahora</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" data-eb-editable="link" data-eb-key="index.button.8" data-eb-role="button" data-eb-kind="link">
+        <span></span><span></span><span></span>
       </button>
-      <nav id="primary-menu" class="site-nav">
-        <ul>
-          <li><a href="index.html" data-eb-editable data-eb-key="nav-home" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Home</a></li>
-          <li><a href="menu.html" data-eb-editable data-eb-key="nav-menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menu</a></li>
-          <li><a href="contact.html" data-eb-editable data-eb-key="nav-contact" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Contact</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" aria-label="Hero">
-    <div class="hero-background">
-      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-           alt="pizza restaurant interior with warm lighting"
-           loading="lazy"
-           class="hero-img" data-eb-editable data-eb-key="hero-background" data-eb-editable="image" data-eb-key="index.img.6" data-eb-role="img" data-eb-kind="image">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza artesanal Phanton" data-eb-editable="image" data-eb-key="index.img.9" data-eb-role="img" data-eb-kind="image">
     </div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content" data-eb-editable data-eb-key="hero-content">
-      <h1 data-eb-editable data-eb-key="hero-heading" data-eb-editable="text" data-eb-key="index.h1.7" data-eb-role="h1" data-eb-kind="text">Phanton Pizza</h1>
-      <p data-eb-editable data-eb-key="hero-subtext" data-eb-editable="text" data-eb-key="index.p.8" data-eb-role="p" data-eb-kind="text">Authentic pizza, 5 peso delivery or dine‑in</p>
-      <a href="tel:1113467889" class="btn btn-primary" data-eb-editable data-eb-key="primary-cta" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">Call Now</a>
+    <div class="hero-content fade-in">
+      <div class="hero-badge">Campeche, México</div>
+      <h1 class="hero-title" data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Phanton<span>.</span><br>Pizzas</h1>
+      <p class="hero-tagline" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Pizza artesanal con ingredientes frescos. Del horno a tu puerta o en nuestro local.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/521113467889?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="btn-primary" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
+        <a href="#menu" class="btn-secondary" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ver Menú</a>
+      </div>
     </div>
   </section>
 
-  <!-- Info Block -->
-  <section class="info-block" aria-label="Información">
-    <div class="container" data-eb-editable data-eb-key="info-block">
-      <div class="info-grid">
-        <!-- Hours -->
-        <div class="info-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <div>
-            <span class="info-label" data-eb-editable data-eb-key="info-hours-label">Horario</span>
-            <span class="info-value" data-eb-editable data-eb-key="info-hours-value">Martes a domingo de 7 am a 11 pm</span>
-          </div>
+  <!-- ABOUT -->
+  <section class="section section-dark" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizzero preparando masa" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
         </div>
-        <!-- Location -->
-        <div class="info-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13"></path>
-          </svg>
-          <div>
-            <span class="info-label" data-eb-editable data-eb-key="info-location-label">Ubicación</span>
-            <span class="info-value" data-eb-editable data-eb-key="info-location-value">Campeche</span>
-          </div>
-        </div>
-        <!-- Phone -->
-        <div class="info-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-          <div>
-            <span class="info-label" data-eb-editable data-eb-key="info-phone-label">Teléfono</span>
-            <span class="info-value" data-eb-editable data-eb-key="info-phone-value">1113467889</span>
-          </div>
-        </div>
-        <!-- Delivery -->
-        <div class="info-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
-            <polyline points="17 12 22 17 12 22"></polyline>
-            <line x1="12" y1="12" x2="12" y2="21"></line>
-          </svg>
-          <div>
-            <span class="info-label" data-eb-editable data-eb-key="info-delivery-label">Delivery</span>
-            <span class="info-value" data-eb-editable data-eb-key="info-delivery-value">Sí</span>
+        <div class="about-text fade-in">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.15" data-eb-role="h3" data-eb-kind="text">Nuestra Historia</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">En Phanton creemos que una gran pizza comienza con ingredientes honestos y pasión por lo artesanal. Cada masa se prepara con levadura natural, cada salsa se hace en casa y cada horno cuenta una historia.</p>
+          <p data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Somos más que una pizzería — somos el lugar donde los sabores de Campeche se encuentran con la tradición italiana. Te esperamos.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-num">100%</div>
+              <div class="about-feature-label">Artesanal</div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-num">Frescos</div>
+              <div class="about-feature-label">Ingredientes</div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-num">Rápido</div>
+              <div class="about-feature-label">A Domicilio</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Menu Gallery -->
-  <section class="menu-gallery" aria-label="Galería del menú">
-    <div class="container" data-eb-editable data-eb-key="menu-gallery">
-      <h2 data-eb-editable data-eb-key="menu-heading" data-eb-editable="text" data-eb-key="index.h2.10" data-eb-role="h2" data-eb-kind="text">Nuestras especialidades</h2>
+  <!-- MENU -->
+  <section class="section section-dark" id="menu">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title fade-in" data-eb-editable="text" data-eb-key="index.h2.18" data-eb-role="h2" data-eb-kind="text">Nuestro Menú</h2>
+        <p class="section-subtitle fade-in" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Pizzas desde $150 — Todos incluyen bebida</p>
+      </div>
+      <div class="menu-grid">
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Hawaiana" data-eb-editable="image" data-eb-key="index.img.20" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Jamón, piña natural, queso mozzarella y salsa de tomate casera.</p>
+            <div class="menu-card-price">$195</div>
+          </div>
+        </div>
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Pepperoni" data-eb-editable="image" data-eb-key="index.img.23" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.24" data-eb-role="h3" data-eb-kind="text">Pizza Pepperoni</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">Pepperoni premium, doble capa de mozzarella y aceite de oliva.</p>
+            <div class="menu-card-price">$185</div>
+          </div>
+        </div>
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Mexicana" data-eb-editable="image" data-eb-key="index.img.26" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.27" data-eb-role="h3" data-eb-kind="text">Pizza Mexicana</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Chorizo mexicano, jalapeño fresco, cebolla y queso Oaxaca.</p>
+            <div class="menu-card-price">$210</div>
+          </div>
+        </div>
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Cuatro Quesos" data-eb-editable="image" data-eb-key="index.img.29" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.30" data-eb-role="h3" data-eb-kind="text">Cuatro Quesos</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Mozzarella, gouda, parmesano y queso de cabra con miel.</p>
+            <div class="menu-card-price">$220</div>
+          </div>
+        </div>
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Margarita" data-eb-editable="image" data-eb-key="index.img.32" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.33" data-eb-role="h3" data-eb-kind="text">Pizza Margarita</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Albahaca fresca, tomate cherry, mozzarella de búfala y aceite extra virgen.</p>
+            <div class="menu-card-price">$175</div>
+          </div>
+        </div>
+
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Especialidad de la Casa" data-eb-editable="image" data-eb-key="index.img.35" data-eb-role="img" data-eb-kind="image">
+          <div class="menu-card-body">
+            <h3 class="menu-card-name" data-eb-editable="text" data-eb-key="index.h3.36" data-eb-role="h3" data-eb-kind="text">Especialidad Phanton</h3>
+            <p class="menu-card-desc" data-eb-editable="text" data-eb-key="index.p.37" data-eb-role="p" data-eb-kind="text">Carne premium, champiñones, pimientos tricolor, aceitunas negras y salsa BBQ.</p>
+            <div class="menu-card-price">$350</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title fade-in" data-eb-editable="text" data-eb-key="index.h2.38" data-eb-role="h2" data-eb-kind="text">Nuestro Local</h2>
+        <p class="section-subtitle fade-in" data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Un espacio pensado para disfrutar</p>
+      </div>
       <div class="gallery-grid">
-        <!-- Card 1 -->
-        <article class="menu-card" data-eb-editable data-eb-key="menu-card-1">
-          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-               alt="close‑up of a Margherita pizza"
-               loading="lazy"
-               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.11" data-eb-role="img" data-eb-kind="image">
-          <h3 data-eb-editable data-eb-key="menu-card-1-title" data-eb-editable="text" data-eb-key="index.h3.12" data-eb-role="h3" data-eb-kind="text">Margherita clásica</h3>
-          <p data-eb-editable data-eb-key="menu-card-1-desc" data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">Salsa de tomate, mozzarella fresca y albahaca.</p>
-        </article>
-        <!-- Card 2 -->
-        <article class="menu-card" data-eb-editable data-eb-key="menu-card-2">
-          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-               alt="pepperoni pizza on a wooden board"
-               loading="lazy"
-               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
-          <h3 data-eb-editable data-eb-key="menu-card-2-title" data-eb-editable="text" data-eb-key="index.h3.15" data-eb-role="h3" data-eb-kind="text">Pepperoni</h3>
-          <p data-eb-editable data-eb-key="menu-card-2-desc" data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Pepperoni picante y queso fundido.</p>
-        </article>
-        <!-- Card 3 -->
-        <article class="menu-card" data-eb-editable data-eb-key="menu-card-3">
-          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg"
-               alt="vegetarian pizza with bell peppers"
-               loading="lazy"
-               class="menu-card-img" data-eb-editable="image" data-eb-key="index.img.17" data-eb-role="img" data-eb-kind="image">
-          <h3 data-eb-editable data-eb-key="menu-card-3-title" data-eb-editable="text" data-eb-key="index.h3.18" data-eb-role="h3" data-eb-kind="text">Vegetariana</h3>
-          <p data-eb-editable data-eb-key="menu-card-3-desc" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Pimientos, champiñones, aceitunas y maíz.</p>
-        </article>
+        <div class="gallery-item fade-in">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Fachada del restaurante" data-eb-editable="image" data-eb-key="index.img.40" data-eb-role="img" data-eb-kind="image">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Interior del restaurante" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Horno de pizza" data-eb-editable="image" data-eb-key="index.img.42" data-eb-role="img" data-eb-kind="image">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer" data-eb-editable data-eb-key="footer">
-    <div class="container" data-eb-editable data-eb-key="footer-content">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="index.html" data-eb-editable data-eb-key="footer-home" data-eb-editable="link" data-eb-key="index.a.20" data-eb-role="a" data-eb-kind="link">Home</a></li>
-          <li><a href="menu.html" data-eb-editable data-eb-key="footer-menu" data-eb-editable="link" data-eb-key="index.a.21" data-eb-role="a" data-eb-kind="link">Menu</a></li>
-          <li><a href="contact.html" data-eb-editable data-eb-key="footer-contact" data-eb-editable="link" data-eb-key="index.a.22" data-eb-role="a" data-eb-kind="link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="footer-social" aria-label="Redes sociales">
-        <!-- Placeholder icons -->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon" data-eb-editable data-eb-key="social-fb">
-          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-        </svg>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon" data-eb-editable data-eb-key="social-ig">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-        </svg>
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title fade-in" data-eb-editable="text" data-eb-key="index.h2.43" data-eb-role="h2" data-eb-kind="text">Contacto</h2>
+        <p class="section-subtitle fade-in" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Estamos listos para tu pedido</p>
       </div>
-      <p class="footer-copyright" data-eb-editable data-eb-key="footer-copyright" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">© 2026 Phanton Pizza. Todos los derechos reservados.</p>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.45" data-eb-role="h3" data-eb-kind="text">Información</h3>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Ubicación</div>
+              <div class="contact-detail-value">Campeche, México</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Teléfono</div>
+              <div class="contact-detail-value"><a href="tel:1113467889" data-eb-editable="link" data-eb-key="index.a.46" data-eb-role="a" data-eb-kind="link">111 346 7889</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-detail-label">WhatsApp</div>
+              <div class="contact-detail-value"><a href="https://wa.me/521113467889" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.47" data-eb-role="a" data-eb-kind="link">Enviar mensaje</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-detail-label">Horario</div>
+              <div class="contact-detail-value">Martes a Domingo — 7:00 AM a 11:00 PM</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🛵</div>
+            <div>
+              <div class="contact-detail-label">Domicilio</div>
+              <div class="contact-detail-value">$5 MXN por envío</div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrapper fade-in">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Ubicación Phanton Pizzas"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" data-eb-editable="link" data-eb-key="index.a.48" data-eb-role="a" data-eb-kind="link">Phanton<span>.</span></a>
+          <p data-eb-editable="text" data-eb-key="index.p.49" data-eb-role="p" data-eb-kind="text">Pizza artesanal en Campeche. Del horno a tu mesa o a tu puerta.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-eb-editable="text" data-eb-key="index.h4.50" data-eb-role="h4" data-eb-kind="text">Navegación</h4>
+          <ul>
+            <li><a href="#hero" data-eb-editable="link" data-eb-key="index.a.51" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+            <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.52" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+            <li><a href="#about" data-eb-editable="link" data-eb-key="index.a.53" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+            <li><a href="#gallery" data-eb-editable="link" data-eb-key="index.a.54" data-eb-role="a" data-eb-kind="link">Galería</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-eb-editable="text" data-eb-key="index.h4.55" data-eb-role="h4" data-eb-kind="text">Contacto</h4>
+          <ul>
+            <li><a href="tel:1113467889" data-eb-editable="link" data-eb-key="index.a.56" data-eb-role="a" data-eb-kind="link">111 346 7889</a></li>
+            <li><a href="https://wa.me/521113467889" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link">WhatsApp</a></li>
+            <li><a href="#contact" data-eb-editable="link" data-eb-key="index.a.58" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-eb-editable="text" data-eb-key="index.h4.59" data-eb-role="h4" data-eb-kind="text">Horario</h4>
+          <ul>
+            <li>Martes — Domingo</li>
+            <li>7:00 AM — 11:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text">&copy; 2026 Phanton Pizzas. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 
+  <!-- WHATSAPP FAB -->
+  <a href="https://wa.me/521113467889?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="WhatsApp" data-eb-editable="link" data-eb-key="index.a.61" data-eb-role="a" data-eb-kind="link">
+    💬
+  </a>
+
   <script>
-    // Simple mobile menu toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('primary-menu');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
-      toggle.setAttribute('aria-expanded', !expanded);
-      menu.classList.toggle('open');
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('active');
     });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('active');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
+
 </body>
 </html>
