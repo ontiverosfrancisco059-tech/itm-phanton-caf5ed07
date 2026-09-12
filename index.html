@@ -1,263 +1,309 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phanton Pizzas | Campeche</title>
-  <meta name="description" content="Phanton Pizzas en Campeche: pizza artesanal a domicilio por $5 o para comer en el local. Pide por WhatsApp, martes a domingo de 7 am a 11 pm." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phanton · Pizzería en Campeche</title>
+  <meta name="description" content="Pizzería Phanton en Campeche. Pizzas artesanales, entregas a domicilio por solo $5 o vívelo en el local. Martes a domingo, 7 am a 11 pm. Pide por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <a class="skip-link" href="#inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Saltar al contenido</a>
+
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a class="brand" href="#hero" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
-        <span class="brand-name">Phanton<em>.</em></span>
-        <span class="brand-sub">Pizzas · Campeche</span>
+      <a href="#inicio" class="brand" aria-label="Phanton, inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-text">PHANTON</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="main-nav" id="mainNav">
-        <a href="#hero" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a>
-        <a href="#menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a>
-        <a href="#about" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-        <a href="#location" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Ubicación</a>
-        <a href="#contact" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Contacto</a>
-        <a class="btn btn-gold nav-cta" href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Llámanos: 111 346 7889</a>
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+          <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+          <li><a href="#pedir" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Cómo pedir</a></li>
+          <li><a href="#ubicacion" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Horario y ubicación</a></li>
+        </ul>
       </nav>
+      <div class="header-actions">
+        <a class="btn btn-small btn-gold header-cta" href="#pedir" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="siteNav" data-eb-editable="link" data-eb-key="index.button.8" data-eb-role="button" data-eb-kind="link">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="hero">
-      <div class="hero-bg" role="img" aria-label="Pizza artesanal con ingredientes visibles sobre superficie oscura"></div>
-      <div class="container">
-        <div class="hero-content">
-          <p class="hero-eyebrow" data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Pizzería artesanal · Campeche</p>
-          <h1 data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Phanton</h1>
-          <p class="hero-tagline" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Pizza de noche, <em>sabor que perdura.</em></p>
-          <p class="hero-desc" data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">Elaboramos cada pizza con masa artesanal y horneada al momento. Disfrútala en nuestro local o pídela a domicilio: te la llevamos hasta tu puerta por solo $5.</p>
-          <div class="hero-actions">
-            <a class="btn btn-gold" href="https://wa.me/521113467889?text=Hola%20Phanton%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Haz tu pedido en WhatsApp</a>
-            <a class="btn btn-ghost" href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Llámanos: 111 346 7889</a>
-          </div>
-          <div class="hero-meta">
-            <span class="hero-meta-item"><b>Martes a domingo</b>7 am – 11 pm</span>
-            <span class="hero-meta-item"><b>Delivery</b>$5 a la puerta</span>
-            <span class="hero-meta-item"><b>Precios</b>$150 – $350</span>
-          </div>
+    <section class="hero" id="inicio">
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Pizzería &amp; cocina · Campeche</p>
+        <h1 class="hero-title reveal" data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">
+          <span class="hero-kicker">Phanton</span>
+          El sabor que se siente<br>en casa
+        </h1>
+        <p class="hero-sub reveal" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Pizzas artesanales al horno, entregadas en tu puerta por solo $5 o disfrútalas aquí mismo en nuestro local.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-gold" href="#pedir" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Haz tu pedido en WhatsApp</a>
+          <a class="btn btn-ghost" href="#menu" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Explorar el menú</a>
         </div>
+        <ul class="hero-meta reveal" aria-label="Datos rápidos">
+          <li>Entrega a domicilio · $5</li>
+          <li>Mar–Dom · 7 am – 11 pm</li>
+          <li>Reservas no disponibles</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg class="pizza-svg" viewBox="0 0 420 420" role="img">
+          <circle class="p-crust" cx="210" cy="210" r="196"></circle>
+          <circle class="p-sauce" cx="210" cy="210" r="158"></circle>
+          <circle class="p-cheese" cx="210" cy="210" r="146"></circle>
+          <circle class="p-p1" cx="210" cy="146" r="22"></circle>
+          <circle class="p-p2" cx="148" cy="232" r="20"></circle>
+          <circle class="p-p3" cx="272" cy="232" r="22"></circle>
+          <circle class="p-p4" cx="210" cy="282" r="20"></circle>
+          <circle class="p-p5" cx="142" cy="166" r="18"></circle>
+          <circle class="p-p6" cx="278" cy="166" r="18"></circle>
+          <circle class="p-herb" cx="210" cy="196" r="4"></circle>
+          <circle class="p-herb" cx="236" cy="216" r="4"></circle>
+          <circle class="p-herb" cx="184" cy="216" r="4"></circle>
+          <circle class="p-herb-halo" cx="210" cy="196" r="9"></circle>
+          <circle class="p-herb-halo" cx="236" cy="216" r="9"></circle>
+          <circle class="p-herb-halo" cx="184" cy="216" r="9"></circle>
+        </svg>
       </div>
     </section>
 
-    <!-- ============ MENÚ ============ -->
-    <section id="menu">
+    <section class="section" id="nosotros">
       <div class="container">
-        <div class="center-head reveal">
-          <p class="section-eyebrow" data-eb-editable="text" data-eb-key="index.p.15" data-eb-role="p" data-eb-kind="text">El menú</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.16" data-eb-role="h2" data-eb-kind="text">Pizzas artesanales</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">De entrada elige tu pizza acompañada de una coca cola o un jugo. Preparados al momento, desde $150 hasta $350.</p>
+        <div class="section-head reveal">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.14" data-eb-role="p" data-eb-kind="text">Nosotros</p>
+          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.15" data-eb-role="h2" data-eb-kind="text">Una pizzería de barrio,<br><em>pensada en grande</em></h2>
         </div>
-
-        <div class="reveal">
-          <div class="menu-cat-title">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.18" data-eb-role="h3" data-eb-kind="text">De entrada</h3>
-            <span>Pizza + coca cola o jugo</span>
-          </div>
-          <div class="grid grid-3">
-            <article class="card">
-              <div class="card-image">
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza Margherita con tomate, mozzarella y albahaca" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.19" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$150</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.20" data-eb-role="h3" data-eb-kind="text">Margherita</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Tomate, mozzarella y albahaca fresca sobre nuestra masa artesanal.</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-image">
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza de champiñones frescos con tonos tierra" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.22" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$170</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.23" data-eb-role="h3" data-eb-kind="text">Champiñones</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.24" data-eb-role="p" data-eb-kind="text">Champiñones frescos con queso fundido y toques herbales.</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-image">
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza de pepperoni con queso derretido en primer plano" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.25" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$180</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.26" data-eb-role="h3" data-eb-kind="text">Pepperoni</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.27" data-eb-role="p" data-eb-kind="text">Pepperoni crujiente y queso derretido en cada rebanada.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="reveal" style="margin-top:48px;">
-          <div class="menu-cat-title">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">Especialidades</h3>
-            <span>Distintos tipos de pizzas</span>
-          </div>
-          <div class="grid grid-3">
-            <article class="card">
-              <div class="card-image">
-                <span class="card-badge">Favorita</span>
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza hawaiana con jamón y piña, presentación limpia" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.29" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$190</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.30" data-eb-role="h3" data-eb-kind="text">Hawaiana</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Jamón y piña sobre nuestra base dorada. Nuestra favorita de la casa.</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-image">
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza suprema cargada con múltiples ingredientes" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.32" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$250</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.33" data-eb-role="h3" data-eb-kind="text">Suprema</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Cargada de ingredientes con colores vibrantes para los que piden todo.</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-image">
-                <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza artesanal entera con ingredientes visibles" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.35" data-eb-role="img" data-eb-kind="image">
-                <span class="card-price">$350</span>
-              </div>
-              <div class="card-body">
-                <h3 data-eb-editable="text" data-eb-key="index.h3.36" data-eb-role="h3" data-eb-kind="text">Familiar</h3>
-                <p data-eb-editable="text" data-eb-key="index.p.37" data-eb-role="p" data-eb-kind="text">Suficiente para compartir. Elige tus ingredientes y la armamos para ti.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <p class="menu-note reveal" data-eb-editable="text" data-eb-key="index.p.38" data-eb-role="p" data-eb-kind="text">
-          Cada entrada incluye tu pizza con <b>coca cola o jugo</b>. Todos los precios van de
-          <b>$150 a $350</b>. Haz tu pedido por WhatsApp o come en el local.
-        </p>
-      </div>
-    </section>
-
-    <div class="divider reveal"><span class="divider-diamond"></span></div>
-
-    <!-- ============ NOSOTROS ============ -->
-    <section id="about">
-      <div class="container">
         <div class="about-grid">
-          <div class="about-media reveal">
-            <figure>
-              <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Interior acogedor del restaurante con iluminación cálida" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.39" data-eb-role="img" data-eb-kind="image">
-            </figure>
-            <figure>
-              <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Manos de pizzero trabajando la masa artesanal" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.40" data-eb-role="img" data-eb-kind="image">
-            </figure>
-            <figure>
-              <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Moto con caja de pizza entregando el servicio a domicilio" loading="lazy" / data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
-            </figure>
-          </div>
           <div class="about-copy reveal">
-            <p class="section-eyebrow" data-eb-editable="text" data-eb-key="index.p.42" data-eb-role="p" data-eb-kind="text">Nosotros</p>
-            <h2 data-eb-editable="text" data-eb-key="index.h2.43" data-eb-role="h2" data-eb-kind="text">Artesanía por la noche,<br />sabor sin prisa.</h2>
-            <p data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">
-              Phanton nació en Campeche con una idea sencilla: pizza buenísima,
-              hecha con calma y sin pretensiones. Trabajamos la masa artesanal
-              cada día, horneamos por pedido y la llevamos hasta tu puerta.
-            </p>
-            <p data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">
-              Sirve para cenar en familia, para antojarse a media tarde o para
-              una noche de película. Pídenos por WhatsApp y en minutos está en
-              camino. O ven al local: martes a domingo de 7 am a 11 pm.
-            </p>
-            <div class="features">
-              <div class="feature"><b>Masa artesanal</b><span>Amasada y fermentada todos los días.</span></div>
-              <div class="feature"><b>Horneada al momento</b><span>Por pedido, nunca pasada de tiempo.</span></div>
-              <div class="feature"><b>Delivery $5</b><span>La llevamos a domicilio en todo Campeche.</span></div>
-              <div class="feature"><b>Come en local</b><span>Ambiente relajado para disfrutar ahí.</span></div>
+            <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">En <strong>Phanton</strong> vendemos pizzas a domicilio con la calidez de casa: masa fresca, ingredientes generosos y un horno que no descansa. Ya sea que pidas para tu hogar o vengas a comer en el local, cada pizza sale con el mismo cuidado.</p>
+            <p data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Manos a la obra todos los días de la semana, de martes a domingo, para que tu antojo nunca espere demasiado.</p>
+            <a class="text-link" href="#menu" data-eb-editable="link" data-eb-key="index.a.18" data-eb-role="a" data-eb-kind="link">Ver nuestro menú <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-card-item">
+              <span class="about-card-line">Horario</span>
+              <strong>Mar – Dom · 7:00 – 23:00</strong>
+              <small>Lunes descansamos</small>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-line">Domicilio</span>
+              <strong>Solo $5 a tu puerta</strong>
+              <small>Dentro de Campeche</small>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-line">Pide fácil</span>
+              <strong>Directo por WhatsApp</strong>
+              <small>Pedido listo en minutos</small>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="divider reveal"><span class="divider-diamond"></span></div>
-
-    <!-- ============ UBICACIÓN ============ -->
-    <section id="location">
+    <section class="section section-dark" id="featured">
       <div class="container">
-        <div class="center-head reveal">
-          <p class="section-eyebrow" data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Ubicación</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.47" data-eb-role="h2" data-eb-kind="text">Encuéntranos en Campeche</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">Ven a comer al local o pide a domicilio: la pizza llega a tu puerta por solo $5.</p>
-        </div>
-        <div class="location-grid reveal">
-          <div class="map-frame">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"
-              width="600" height="450" style="border:0;" allowfullscreen=""
-              loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-              title="Mapa de ubicación de Phanton Pizzas en Campeche"></iframe>
+        <div class="featured-grid">
+          <div class="featured-badge reveal" aria-hidden="true">
+            <span class="featured-badge-top">El favorito</span>
+            <svg viewBox="0 0 120 120">
+              <circle class="p-crust" cx="60" cy="60" r="56"></circle>
+              <circle class="p-pine" cx="60" cy="60" r="44"></circle>
+            </svg>
+            <span class="featured-badge-bottom">Hawaiana</span>
           </div>
-          <div class="info-stack">
-            <article class="info-card">
-              <h3 data-eb-editable="text" data-eb-key="index.h3.49" data-eb-role="h3" data-eb-kind="text">Horario</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.50" data-eb-role="p" data-eb-kind="text">Martes a domingo<br />7:00 am – 11:00 pm</p>
-              <p style="margin-top:8px; color:rgba(245,240,232,.55); font-size:14px;" data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Lunes descansamos.</p>
-            </article>
-            <article class="info-card">
-              <h3 data-eb-editable="text" data-eb-key="index.h3.52" data-eb-role="h3" data-eb-kind="text">Servicio a domicilio</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Pedidos por WhatsApp con envío de solo $5 en Campeche.</p>
-              <p style="margin-top:8px;" data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text"><a href="https://wa.me/521113467889?text=Hola%20Phanton%2C%20quiero%20un%20env%C3%ADo%20a%20domicilio" target="_blank" rel="noopener" class="info-link" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Pedir ahora <b style="color:var(--gold);">→</b></a></p>
-            </article>
-            <article class="info-card">
-              <h3 data-eb-editable="text" data-eb-key="index.h3.56" data-eb-role="h3" data-eb-kind="text">En el local</h3>
-              <p data-eb-editable="text" data-eb-key="index.p.57" data-eb-role="p" data-eb-kind="text">No manejamos reservaciones: llega, ordena y disfruta en el momento.</p>
-            </article>
+          <div class="featured-copy reveal">
+            <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Plato destacado</p>
+            <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.20" data-eb-role="h2" data-eb-kind="text">Pizza Hawaiana</h2>
+            <p data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Base crujiente, doble queso fundido, jugoso jamón y el contraste dulce de la piña fresca. Nuestra carta de presentación y la más pedida de la casa.</p>
+            <p class="featured-price" data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Desde $250 <span>· Mediana / familiar</span></p>
+            <a class="btn btn-gold" href="#pedir" data-eb-editable="link" data-eb-key="index.a.23" data-eb-role="a" data-eb-kind="link">Pedir esta pizza</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="divider reveal"><span class="divider-diamond"></span></div>
-
-    <!-- ============ CONTACTO ============ -->
-    <section class="contact" id="contact">
+    <section class="section" id="menu">
       <div class="container">
-        <div class="contact-box reveal">
-          <p class="section-eyebrow" data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Contacto</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.59" data-eb-role="h2" data-eb-kind="text">Haz tu pedido hoy</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text">Llámanos o escríbenos por WhatsApp y tu pizza de Phanton va en camino.</p>
-          <a class="contact-phone" href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.61" data-eb-role="a" data-eb-kind="link">111 346 7889</a>
-          <div class="contact-actions">
-            <a class="btn btn-gold" href="https://wa.me/521113467889?text=Hola%20Phanton%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.62" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
-            <a class="btn btn-ghost" href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.63" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.24" data-eb-role="p" data-eb-kind="text">Menú</p>
+          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.25" data-eb-role="h2" data-eb-kind="text">Nuestra carta</h2>
+          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text">Todo se prepara al momento. Precios desde $150 hasta $350 según el tamaño y los ingredientes.</p>
         </div>
-        <div class="contact-details reveal">
-          <article class="info-card">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.64" data-eb-role="h3" data-eb-kind="text">Teléfono</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.65" data-eb-role="p" data-eb-kind="text"><a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.66" data-eb-role="a" data-eb-kind="link">111 346 7889</a></p>
+
+        <div class="tabs reveal" role="tablist" aria-label="Categorías del menú">
+          <button class="tab is-active" role="tab" aria-selected="true" data-filter="*" data-eb-editable="link" data-eb-key="index.button.27" data-eb-role="button" data-eb-kind="link">Todo</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="entradas" data-eb-editable="link" data-eb-key="index.button.28" data-eb-role="button" data-eb-kind="link">Entradas</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="pizzas" data-eb-editable="link" data-eb-key="index.button.29" data-eb-role="button" data-eb-kind="link">Pizzas</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="bebidas" data-eb-editable="link" data-eb-key="index.button.30" data-eb-role="button" data-eb-kind="link">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <span class="menu-tag">Destacada</span>
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.31" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">Salsa de tomate, doble queso, jamón y piña fresca asada.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.33" data-eb-role="p" data-eb-kind="text">$250</p>
           </article>
-          <article class="info-card">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.67" data-eb-role="h3" data-eb-kind="text">Horario</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.68" data-eb-role="p" data-eb-kind="text">Martes a domingo<br />7 am – 11 pm</p>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.34" data-eb-role="h3" data-eb-kind="text">Pizza Pepperoni</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">La clásica: pepperoni abundante sobre una cama de queso fundido.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">$220</p>
           </article>
-          <article class="info-card">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.69" data-eb-role="h3" data-eb-kind="text">Ciudad</h3>
-            <p data-eb-editable="text" data-eb-key="index.p.70" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.37" data-eb-role="h3" data-eb-kind="text">Pizza Mexicana</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.38" data-eb-role="p" data-eb-kind="text">Chorizo, jalapeño, cebolla morada y queso con un toque picante.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">$260</p>
           </article>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.40" data-eb-role="h3" data-eb-kind="text">Pizza Cuatro Quesos</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.41" data-eb-role="p" data-eb-kind="text">Mozzarella, gouda, parmesano y queso azul, fundidos a la perfección.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.42" data-eb-role="p" data-eb-kind="text">$270</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.43" data-eb-role="h3" data-eb-kind="text">Pizza Al Pastor</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Adobo de pastor, cebolla, cilantro y piña. Sabor taco en cada rebanada.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">$280</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.46" data-eb-role="h3" data-eb-kind="text">Pizza De la Huerta</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.47" data-eb-role="p" data-eb-kind="text">Pimiento, champiñones, elote, jitomate y aceitunas para los veggie lovers.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">$230</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.49" data-eb-role="h3" data-eb-kind="text">Pizza Carnes Frías</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.50" data-eb-role="p" data-eb-kind="text">Jamón serrano, salami, pepperoni y tocino en una sola base crujiente.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">$300</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="pizzas">
+            <span class="menu-tag menu-tag-gold">Especial de la casa</span>
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.52" data-eb-role="h3" data-eb-kind="text">Pizza Phanton</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Nuestra creación insignia: ingredientes del día seleccionados por el chef.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">$350</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="entradas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.55" data-eb-role="h3" data-eb-kind="text">Pan de ajo</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">Crujiente, con mantequilla de hierbas y espolvoreado con queso.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.57" data-eb-role="p" data-eb-kind="text">$80</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="entradas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.58" data-eb-role="h3" data-eb-kind="text">Nachos con tres quesos</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.59" data-eb-role="p" data-eb-kind="text">Totopos bañados en queso derretido, jalapeños y pico de gallo.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text">$95</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="entradas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.61" data-eb-role="h3" data-eb-kind="text">Ensalada de la casa</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.62" data-eb-role="p" data-eb-kind="text">Mezcla fresca con aderezo de hierbas. Perfecta antes de la pizza.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">$110</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="entradas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.64" data-eb-role="h3" data-eb-kind="text">Tiras de pollo crujientes</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.65" data-eb-role="p" data-eb-kind="text">Empanizadas doradas servidas con salsa de la casa.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.66" data-eb-role="p" data-eb-kind="text">$120</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="bebidas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.67" data-eb-role="h3" data-eb-kind="text">Coca-Cola o refresco</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.68" data-eb-role="p" data-eb-kind="text">Bien fría, la compañera infalible de una buena pizza.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.69" data-eb-role="p" data-eb-kind="text">$35</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="bebidas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.70" data-eb-role="h3" data-eb-kind="text">Jugo natural</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">Naranja o piña, exprimido al momento.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.72" data-eb-role="p" data-eb-kind="text">$40</p>
+          </article>
+
+          <article class="menu-card reveal" data-category="bebidas">
+            <h3 class="menu-name" data-eb-editable="text" data-eb-key="index.h3.73" data-eb-role="h3" data-eb-kind="text">Agua o limonada</h3>
+            <p class="menu-desc" data-eb-editable="text" data-eb-key="index.p.74" data-eb-role="p" data-eb-kind="text">De horchata, jamaica o limón. Fresca y ligera.</p>
+            <p class="menu-price" data-eb-editable="text" data-eb-key="index.p.75" data-eb-role="p" data-eb-kind="text">$30</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="pedir">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.76" data-eb-role="p" data-eb-kind="text">Pide fácil</p>
+          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.77" data-eb-role="h2" data-eb-kind="text">Tu pedido en WhatsApp</h2>
+        </div>
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.78" data-eb-role="h3" data-eb-kind="text">Elige tu pizza</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.79" data-eb-role="p" data-eb-kind="text">Revisa la carta y arma tu pedido como más te guste.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.80" data-eb-role="h3" data-eb-kind="text">Envíanos tu pedido</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.81" data-eb-role="p" data-eb-kind="text">Escríbenos por WhatsApp y confirma precio y entrega.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.82" data-eb-role="h3" data-eb-kind="text">Recibe o ven por ella</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.83" data-eb-role="p" data-eb-kind="text">Te la llevamos a casa por solo $5, o pásala a recoger al local.</p>
+          </li>
+        </ol>
+        <div class="order-cta reveal">
+          <a class="btn btn-gold btn-lg" id="waOrder" href="https://wa.me/521113467889?text=Hola%20Phanton%2C%20quiero%20hacer%20un%20pedido%20de%20pizza." target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.84" data-eb-role="a" data-eb-kind="link">Haz tu pedido en WhatsApp</a>
+          <p class="order-phone" data-eb-editable="text" data-eb-key="index.p.85" data-eb-role="p" data-eb-kind="text">También llámanos: <a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.86" data-eb-role="a" data-eb-kind="link">111 346 7889</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ubicacion">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.87" data-eb-role="p" data-eb-kind="text">Visítanos</p>
+          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.88" data-eb-role="h2" data-eb-kind="text">Horario y ubicación</h2>
+        </div>
+        <div class="loc-grid">
+          <div class="loc-info reveal">
+            <div class="loc-block">
+              <span class="about-card-line">Horario</span>
+              <p class="loc-strong" data-eb-editable="text" data-eb-key="index.p.89" data-eb-role="p" data-eb-kind="text">Martes a domingo<br>7:00 am – 11:00 pm</p>
+              <p class="loc-muted" data-eb-editable="text" data-eb-key="index.p.90" data-eb-role="p" data-eb-kind="text">Los lunes preparamos todo para recibirte. Reservas no disponibles: llega o pide directo.</p>
+            </div>
+            <div class="loc-block">
+              <span class="about-card-line">Ubicación</span>
+              <p class="loc-strong" data-eb-editable="text" data-eb-key="index.p.91" data-eb-role="p" data-eb-kind="text">Campeche, México</p>
+              <p class="loc-muted" data-eb-editable="text" data-eb-key="index.p.92" data-eb-role="p" data-eb-kind="text">Pizzería con servicio a domicilio en toda la ciudad y consumo en el local.</p>
+            </div>
+            <div class="loc-block">
+              <span class="about-card-line">Teléfono</span>
+              <p class="loc-strong" data-eb-editable="text" data-eb-key="index.p.93" data-eb-role="p" data-eb-kind="text"><a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.94" data-eb-role="a" data-eb-kind="link">111 346 7889</a></p>
+              <p class="loc-muted" data-eb-editable="text" data-eb-key="index.p.95" data-eb-role="p" data-eb-kind="text">WhatsApp para pedidos, 7 am a 11 pm.</p>
+            </div>
+          </div>
+          <div class="loc-map reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mapa de Pizzas y Tacos El Suspiro"></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -265,59 +311,29 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="footer-brand" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">Phanton<em>.</em> Pizzas</p>
-      <nav class="footer-nav" aria-label="Navegación del pie">
-        <a href="#hero" data-eb-editable="link" data-eb-key="index.a.72" data-eb-role="a" data-eb-kind="link">Inicio</a>
-        <a href="#menu" data-eb-editable="link" data-eb-key="index.a.73" data-eb-role="a" data-eb-kind="link">Menú</a>
-        <a href="#about" data-eb-editable="link" data-eb-key="index.a.74" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-        <a href="#location" data-eb-editable="link" data-eb-key="index.a.75" data-eb-role="a" data-eb-kind="link">Ubicación</a>
-        <a href="#contact" data-eb-editable="link" data-eb-key="index.a.76" data-eb-role="a" data-eb-kind="link">Contacto</a>
-      </nav>
-      <p data-eb-editable="text" data-eb-key="index.p.77" data-eb-role="p" data-eb-kind="text">Campeche · Martes a domingo · 7 am a 11 pm · Delivery $5</p>
-      <p style="margin-top:8px;" data-eb-editable="text" data-eb-key="index.p.78" data-eb-role="p" data-eb-kind="text">© <span id="year">2026</span> Phanton Pizzas. Todos los derechos reservados.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand">PHANTON</span>
+        <p data-eb-editable="text" data-eb-key="index.p.96" data-eb-role="p" data-eb-kind="text">Pizza a domicilio por solo $5 o vívelo en el local. Campeche, México.</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.97" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
+        <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.98" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+        <li><a href="#pedir" data-eb-editable="link" data-eb-key="index.a.99" data-eb-role="a" data-eb-kind="link">Cómo pedir</a></li>
+        <li><a href="#ubicacion" data-eb-editable="link" data-eb-key="index.a.100" data-eb-role="a" data-eb-kind="link">Ubicación</a></li>
+      </ul>
+      <div class="footer-contact">
+        <p data-eb-editable="text" data-eb-key="index.p.101" data-eb-role="p" data-eb-kind="text"><a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.102" data-eb-role="a" data-eb-kind="link">111 346 7889</a></p>
+        <p data-eb-editable="text" data-eb-key="index.p.103" data-eb-role="p" data-eb-kind="text">Mar – Dom · 7:00 – 23:00</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-eb-editable="text" data-eb-key="index.p.104" data-eb-role="p" data-eb-kind="text">&copy; <span id="year"></span> Phanton · Pizzería en Campeche. Hecho con gusto.</p>
     </div>
   </footer>
 
-  <script>
-    var header = document.getElementById("siteHeader");
-    var toggle = document.getElementById("navToggle");
-    var body = document.body;
+  <button class="back-top" id="backTop" aria-label="Volver arriba" data-eb-editable="link" data-eb-key="index.button.105" data-eb-role="button" data-eb-kind="link">↑</button>
 
-    function onScroll() {
-      header.classList.toggle("scrolled", window.scrollY > 24);
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    toggle.addEventListener("click", function () {
-      var open = body.classList.toggle("nav-open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-
-    document.querySelectorAll("#mainNav a, .footer-nav a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        body.classList.remove("nav-open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
-
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    document.querySelectorAll(".reveal").forEach(function (el) {
-      observer.observe(el);
-    });
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
