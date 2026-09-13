@@ -3,557 +3,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phanton — Pizzería en Campeche | Menú y Domicilio</title>
-  <meta name="description" content="Phanton, pizzería en Campeche. Pizzas artesanales de $150 a $350, entregas a domicilio por $5 y combos con Coca-Cola o jugo. Pide por WhatsApp.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23b98a34'/%3E%3Cpath d='M32 32 L14 18 A28 28 0 0 1 50 18 Z' fill='%23f6f1e7'/%3E%3Ccircle cx='27' cy='24' r='3.5' fill='%23c23b1e'/%3E%3Ccircle cx='37' cy='28' r='3.5' fill='%23c23b1e'/%3E%3C/svg%3E">
+  <title>Phanton · Pizzería artesanal en Campeche</title>
+  <meta name="description" content="Phanton, pizzería artesanal en Campeche. Pizzas clásicas y especiales desde $150, envío a domicilio por solo $5 o come en el local. Martes a domingo de 7 am a 11 pm. Pide por WhatsApp: 111 346 7889.">
+  <meta property="og:title" content="Phanton · Pizzería artesanal en Campeche">
+  <meta property="og:description" content="Pizza artesanal, envío a domicilio por $5 y el sabor de siempre en Campeche.">
+  <meta property="og:type" content="restaurant">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230c0c0d'/%3E%3Ctext x='50' y='68' font-family='Georgia' font-style='italic' font-size='54' fill='%23d8a24a' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <span class="topbar__item">Entrega a domicilio por $5</span>
-      <span class="topbar__sep" aria-hidden="true"></span>
-      <span class="topbar__item">Martes a Domingo · 7:00 am – 11:00 pm</span>
+<header class="site-header" data-header>
+  <div class="container nav-inner">
+    <a class="logo" href="index.html" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Phanton<i>.</i>
+      <small>Pizzería &middot; Campeche</small>
+    </a>
+    <nav class="nav-menu" aria-label="Navegación principal">
+      <a href="index.html" class="is-active" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
+      <a href="menu.html" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Menú</a>
+      <a href="contacto.html" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Contacto</a>
+      <a href="tel:+521113467889" class="btn btn--primary btn--small" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
+    </nav>
+    <a href="tel:+521113467889" class="btn btn--primary btn--small nav-cta" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle data-eb-editable="link" data-eb-key="index.button.7" data-eb-role="button" data-eb-kind="link">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-content" data-reveal>
+      <span class="overline">Pizzería artesanal</span>
+      <h1 data-eb-editable="text" data-eb-key="index.h1.8" data-eb-role="h1" data-eb-kind="text">El sabor de una pizza hecha <em>sin prisa</em></h1>
+      <p class="hero-sub" data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Masa fresca, horno encendido y ese toque casero que reúne a la familia. En Phanton horneamos cada pizza al momento en el corazón de Campeche.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/521113467889" target="_blank" rel="noopener" class="btn btn--primary" data-eb-editable="link" data-eb-key="index.a.10" data-eb-role="a" data-eb-kind="link">Pide por WhatsApp</a>
+        <a href="menu.html" class="btn btn--ghost" data-eb-editable="link" data-eb-key="index.a.11" data-eb-role="a" data-eb-kind="link">Ver la carta</a>
+      </div>
+      <div class="hero-proof">
+        <span class="badge"><span class="dot"></span>Envío a domicilio por $5</span>
+        <span class="badge">Precios desde $150</span>
+        <a href="#horario" class="badge" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Martes a domingo · 7 am – 11 pm</a>
+      </div>
+    </div>
+    <div class="hero-media" data-reveal>
+      <div class="frame">
+        <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza artesanal recién horneada con borde dorado" loading="eager" data-eb-editable="image" data-eb-key="index.img.13" data-eb-role="img" data-eb-kind="image">
+      </div>
+      <div class="hero-chip">
+        <span class="chip-num">$5</span>
+        <span class="chip-label">Entrega<strong>a domicilio</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Pizza artesanal</span><span>Pide por WhatsApp</span><span>Envío por $5</span><span>Martes a domingo</span><span>7 am – 11 pm</span>
+      <span>Pizza artesanal</span><span>Pide por WhatsApp</span><span>Envío por $5</span><span>Martes a domingo</span><span>7 am – 11 pm</span>
     </div>
   </div>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container site-header__inner">
-      <a href="#inicio" class="brand" aria-label="Phanton, inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo de pizza">
-            <circle cx="32" cy="32" r="29" fill="#b98a34"/>
-            <path d="M32 32 L12 16 A32 32 0 0 1 52 16 Z" fill="#f6f1e7"/>
-            <circle cx="26" cy="23" r="4" fill="#c23b1e"/>
-            <circle cx="39" cy="28" r="4" fill="#c23b1e"/>
-          </svg>
-        </span>
-        <span class="brand__text">Phanton</span>
-      </a>
-
-      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
-        <a class="site-nav__link" href="#inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
-        <a class="site-nav__link" href="#menu" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Menú</a>
-        <a class="site-nav__link" href="#nosotros" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-        <a class="site-nav__link" href="#domicilio" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Domicilio</a>
-        <a class="site-nav__link" href="#ubicacion" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Ubicación</a>
-        <a class="site-nav__link site-nav__link--cta" href="#pedir" data-whatsapp data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav" data-eb-editable="link" data-eb-key="index.button.8" data-eb-role="button" data-eb-kind="link">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="inicio">
-
-    <section class="hero">
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__glow hero__glow--one"></div>
-        <div class="hero__glow hero__glow--two"></div>
-      </div>
-
-      <div class="hero__art" aria-hidden="true">
-        <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="cheese" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 190) rotate(0)">
-              <stop offset="0" stop-color="#f2d383"/>
-              <stop offset="1" stop-color="#e3b95c"/>
-            </radialGradient>
-            <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="14"/>
-            </filter>
-          </defs>
-          <circle cx="210" cy="210" r="150" fill="url(#cheese)"/>
-          <circle cx="210" cy="210" r="150" fill="#d8a94f" opacity="0.25"/>
-          <circle cx="210" cy="210" r="196" fill="none" stroke="#b98a34" stroke-width="2" opacity="0.35" stroke-dasharray="3 10"/>
-          <g fill="#c23b1e">
-            <circle cx="150" cy="150" r="15"/><circle cx="268" cy="140" r="15"/><circle cx="205" cy="235" r="15"/>
-            <circle cx="130" cy="230" r="15"/><circle cx="285" cy="225" r="15"/><circle cx="170" cy="290" r="15"/>
-            <circle cx="255" cy="295" r="15"/><circle cx="210" cy="150" r="15"/><circle cx="120" cy="185" r="15"/>
-            <circle cx="298" cy="180" r="14"/>
-          </g>
-          <g fill="#7a2d14" opacity="0.85">
-            <circle cx="150" cy="150" r="5"/><circle cx="268" cy="140" r="5"/><circle cx="205" cy="235" r="5"/>
-            <circle cx="130" cy="230" r="5"/><circle cx="285" cy="225" r="5"/><circle cx="255" cy="295" r="5"/>
-          </g>
-          <g fill="#c8902a">
-            <rect x="212" y="98" width="16" height="16" rx="3"/>
-            <rect x="96" y="178" width="16" height="16" rx="3"/>
-            <rect x="300" y="196" width="16" height="16" rx="3"/>
-          </g>
-          <circle cx="210" cy="210" r="150" fill="none" stroke="#1a1512" stroke-width="26"/>
-          <circle cx="210" cy="210" r="150" fill="none" stroke="#241d17" stroke-width="26"/>
-          <g transform="rotate(-18 210 210)">
-            <path d="M210 60 L236 102 L210 96 L184 102 Z" fill="#fff3d0"/>
-          </g>
-          <g filter="url(#soft)" opacity="0.5">
-            <circle cx="210" cy="210" r="188" fill="none" stroke="#b98a34" stroke-width="2"/>
-          </g>
-        </svg>
-      </div>
-
-      <div class="container hero__inner">
-        <p class="kicker hero__kicker" data-eb-editable="text" data-eb-key="index.p.9" data-eb-role="p" data-eb-kind="text">Pizzería &middot; Campeche</p>
-        <h1 class="hero__title" data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Pizza artesanal,<br>entregada con calma.</h1>
-        <p class="hero__lead" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">En <strong>Phanton</strong> hacemos pizza a domicilio por solo $5 o sírvela en nuestro local. Precios de $150 a $350, con horario de martes a domingo.</p>
-        <div class="hero__actions">
-          <a class="btn btn--gold" href="#pedir" data-whatsapp data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Haz tu pedido en WhatsApp</a>
-          <a class="btn btn--ghost" href="#menu" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ver el menú</a>
+  <section class="section" id="historia">
+    <div class="container history">
+      <div class="history-media" data-reveal>
+        <div class="frame">
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Interior cálido de la pizzería en Campeche" loading="lazy" data-eb-editable="image" data-eb-key="index.img.14" data-eb-role="img" data-eb-kind="image">
         </div>
+        <span class="cap">Hecho en Campeche</span>
       </div>
-    </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Pide por WhatsApp</span><i class="marquee__dot">&#10022;</i>
-        <span>Domicilio $5</span><i class="marquee__dot">&#10022;</i>
-        <span>Pizza + Coca-Cola o jugo</span><i class="marquee__dot">&#10022;</i>
-        <span>Martes a Domingo 7 am – 11 pm</span><i class="marquee__dot">&#10022;</i>
-        <span>Precios de $150 a $350</span><i class="marquee__dot">&#10022;</i>
-        <span>Pide por WhatsApp</span><i class="marquee__dot">&#10022;</i>
-        <span>Domicilio $5</span><i class="marquee__dot">&#10022;</i>
-        <span>Pizza + Coca-Cola o jugo</span><i class="marquee__dot">&#10022;</i>
-        <span>Martes a Domingo 7 am – 11 pm</span><i class="marquee__dot">&#10022;</i>
-        <span>Precios de $150 a $350</span><i class="marquee__dot">&#10022;</i>
+      <div class="history-copy" data-reveal>
+        <span class="overline">Nuestra historia</span>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.15" data-eb-role="h2" data-eb-kind="text">Una buena pizza se hace con paciencia</h2>
+        <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Todo empieza igual cada mañana: la masa reposando, los ingredientes listos y el horno alcanzando su punto. En Phanton creemos que lo sencillo bien hecho es lo que se recuerda.</p>
+        <p data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Pide tu pizza para llevar y te la enviamos a domicilio por solo $5 en Campeche, o ven a disfrutarla recién salida del horno en nuestro local.</p>
+        <dl class="stats">
+          <div class="stat"><b>$150</b><span>Precio desde</span></div>
+          <div class="stat"><b>$5</b><span>Envío a domicilio</span></div>
+          <div class="stat"><b>7 am</b><span>Abrimos cada día</span></div>
+        </dl>
+        <a href="menu.html" class="btn btn--ghost" data-eb-editable="link" data-eb-key="index.a.18" data-eb-role="a" data-eb-kind="link">Descubrir el menú</a>
       </div>
     </div>
+  </section>
 
-    <section class="featured" id="destacada">
-      <div class="container featured__grid">
-        <div class="featured__card">
-          <span class="featured__tag">La elegida de la casa</span>
-          <div class="featured__visual" aria-hidden="true">
-            <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="160" cy="160" r="132" fill="#f2d383"/>
-              <circle cx="160" cy="160" r="132" fill="none" stroke="#1a1512" stroke-width="22"/>
-              <g fill="#f9e8b8">
-                <rect x="160" y="84" width="15" height="15" rx="3" transform="rotate(18 167 91)"/>
-                <rect x="118" y="128" width="15" height="15" rx="3" transform="rotate(-24 125 135)"/>
-                <rect x="204" y="128" width="15" height="15" rx="3" transform="rotate(8 211 135)"/>
-                <rect x="142" y="186" width="15" height="15" rx="3" transform="rotate(40 149 193)"/>
-                <rect x="200" y="196" width="15" height="15" rx="3" transform="rotate(-12 207 203)"/>
-                <rect x="162" y="140" width="15" height="15" rx="3" transform="rotate(0 169 147)"/>
-              </g>
-              <g fill="#c23b1e">
-                <circle cx="126" cy="156" r="11"/><circle cx="194" cy="158" r="11"/><circle cx="164" cy="214" r="11"/>
-                <circle cx="142" cy="110" r="10"/>
-              </g>
-              <g fill="#3d2a1c">
-                <circle cx="126" cy="156" r="4"/><circle cx="194" cy="158" r="4"/>
-              </g>
-            </svg>
+  <section class="section section--alt" id="favoritas">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="overline">La carta en breve</span>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.19" data-eb-role="h2" data-eb-kind="text">Las favoritas de la casa</h2>
+        <p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Elige tu combinación preferida. Todas están disponibles para llevar, comer en el local o con envío a domicilio.</p>
+      </div>
+      <div class="grid-3">
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">Clásica</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza margarita con albahaca fresca" loading="lazy" data-eb-editable="image" data-eb-key="index.img.21" data-eb-role="img" data-eb-kind="image">
           </div>
-          <h2 class="featured__title" data-eb-editable="text" data-eb-key="index.h2.14" data-eb-role="h2" data-eb-kind="text">Pizza Hawaiana</h2>
-          <p class="featured__desc" data-eb-editable="text" data-eb-key="index.p.15" data-eb-role="p" data-eb-kind="text">Jamón, piña dorada y triple queso fundido sobre nuestra masa de fermentación lenta.</p>
-          <p class="featured__price" data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Desde <span>$210</span></p>
-          <a class="btn btn--outline btn--block" href="#pedir" data-whatsapp data-eb-editable="link" data-eb-key="index.a.17" data-eb-role="a" data-eb-kind="link">Pedir ahora</a>
-        </div>
-
-        <div class="featured__notes">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Destacado</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.19" data-eb-role="h2" data-eb-kind="text">Nuestra especialidad de la semana</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">El dulce aroma de la piña caramelizada sobre la base más crujiente de la carta. Disponible todos los días en nuestro horario de atención.</p>
-          <ul class="checklist">
-            <li>Masa fresca diaria, fermentación lenta</li>
-            <li>Ingredientes seleccionados en Campeche</li>
-            <li>Lista en unos minutos, entregada caliente</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="menu" id="menu">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">La carta</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.22" data-eb-role="h2" data-eb-kind="text">Nuestro menú</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Precios de $150 a $350 según el tamaño y los ingredientes. Cada pedido puede incluir tu bebida favorita: Coca-Cola o jugo.</p>
-        </div>
-
-        <div class="menu__filters" role="tablist" aria-label="Filtrar menú">
-          <button class="menu__filter is-active" data-filter="todos" role="tab" aria-selected="true" data-eb-editable="link" data-eb-key="index.button.24" data-eb-role="button" data-eb-kind="link">Todo</button>
-          <button class="menu__filter" data-filter="pizzas" role="tab" aria-selected="false" data-eb-editable="link" data-eb-key="index.button.25" data-eb-role="button" data-eb-kind="link">Pizzas</button>
-          <button class="menu__filter" data-filter="combos" role="tab" aria-selected="false" data-eb-editable="link" data-eb-key="index.button.26" data-eb-role="button" data-eb-kind="link">Combos</button>
-        </div>
-
-        <div class="menu__grid">
-
-          <article class="menu-card" data-category="combos">
-            <div class="menu-card__art" data-kind="combo" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="30" r="26" fill="none" stroke="#b98a34" stroke-width="3" stroke-dasharray="4 4"/>
-                <circle cx="48" cy="30" r="20" fill="#ffe9b8"/>
-                <circle cx="48" cy="30" r="20" fill="none" stroke="#1a1512" stroke-width="3"/>
-                <path d="M24 54h48v8a10 10 0 0 1-10 10H34a10 10 0 0 1-10-10z" fill="#1a1512"/>
-                <rect x="40" y="32" width="4" height="4" rx="1" fill="#c23b1e"/>
-                <rect x="52" y="26" width="4" height="4" rx="1" fill="#c23b1e"/>
-                <path d="M48 40c6 4 12 8 20 10" stroke="#b98a34" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.27" data-eb-role="h3" data-eb-kind="text">Combo Entrada</h3>
-                <span class="menu-card__price">$150</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Pizza personal recién horneada con tu Coca-Cola o jugo. Ideal para empezar.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="combos">
-            <div class="menu-card__art" data-kind="combo" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="34" r="22" fill="none" stroke="#b98a34" stroke-width="3" stroke-dasharray="4 4"/>
-                <circle cx="40" cy="34" r="17" fill="#ffe9b8"/>
-                <circle cx="40" cy="34" r="17" fill="none" stroke="#1a1512" stroke-width="3"/>
-                <circle cx="40" cy="34" r="17" fill="none" stroke="#fff3d0" stroke-width="1.5" opacity="0.6"/>
-                <rect x="66" y="22" width="10" height="18" rx="2" fill="#c23b1e"/>
-                <path d="M70 22v-4a4 4 0 0 1 4-4v4" stroke="#c23b1e" stroke-width="2.5" fill="none"/>
-                <path d="M68 44h6" stroke="#1a1512" stroke-width="2" stroke-linecap="round"/>
-                <path d="M20 54h48v8a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10z" fill="#1a1512"/>
-                <rect x="34" y="38" width="4" height="4" rx="1" fill="#c23b1e"/>
-                <rect x="46" y="34" width="4" height="4" rx="1" fill="#c23b1e"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.29" data-eb-role="h3" data-eb-kind="text">Combo Familiar</h3>
-                <span class="menu-card__price">$260</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.30" data-eb-role="p" data-eb-kind="text">Pizza familiar para compartir con Coca-Cola de 2 litros o jugo. Para toda la mesa.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="ham" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <g fill="#f9e8b8">
-                  <rect x="48" y="20" width="8" height="8" rx="2" />
-                  <rect x="26" y="42" width="8" height="8" rx="2" />
-                  <rect x="62" y="42" width="8" height="8" rx="2" />
-                  <rect x="38" y="66" width="8" height="8" rx="2" />
-                  <rect x="60" y="64" width="8" height="8" rx="2" />
-                </g>
-                <circle cx="34" cy="34" r="7" fill="#c23b1e"/>
-                <circle cx="62" cy="30" r="7" fill="#c23b1e"/>
-                <circle cx="40" cy="54" r="7" fill="#c23b1e"/>
-                <circle cx="60" cy="54" r="7" fill="#c23b1e"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.31" data-eb-role="h3" data-eb-kind="text">Pizza Hawaiana</h3>
-                <span class="menu-card__price">$210</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">Jamón, piña caramelizada y queso fundido. La favorita de la casa.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="pep" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <circle cx="34" cy="34" r="8" fill="#c23b1e"/>
-                <circle cx="62" cy="30" r="8" fill="#c23b1e"/>
-                <circle cx="40" cy="56" r="8" fill="#c23b1e"/>
-                <circle cx="62" cy="56" r="8" fill="#c23b1e"/>
-                <circle cx="48" cy="40" r="8" fill="#c23b1e"/>
-                <circle cx="34" cy="62" r="7" fill="#c23b1e"/>
-                <circle cx="34" cy="34" r="3.5" fill="#7a2d14"/>
-                <circle cx="40" cy="56" r="3.5" fill="#7a2d14"/>
-                <circle cx="48" cy="40" r="3.5" fill="#7a2d14"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.33" data-eb-role="h3" data-eb-kind="text">Pizza Peperoni</h3>
-                <span class="menu-card__price">$220</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Doble peperoni y queso extra. Para los clásicos de corazón.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="mex" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <g fill="#4a7c3a">
-                  <path d="M30 30 l5 3 -4 4 -5 -3z"/>
-                  <path d="M46 22 q6 6 4 12 q-6 2 -8 -6 q2 -6 4 -6z" opacity="0.9"/>
-                  <path d="M66 40 q-4 6 -10 4 q-2 -6 4 -10 q6 2 6 6z"/>
-                  <path d="M34 66 q-6 2 -8 -6 q4 -8 10 -4 z"/>
-                </g>
-                <g fill="#c23b1e">
-                  <circle cx="42" cy="38" r="5"/>
-                  <circle cx="58" cy="48" r="5"/>
-                  <circle cx="48" cy="58" r="5"/>
-                </g>
-                <circle cx="42" cy="38" r="2.2" fill="#7a2d14"/>
-                <circle cx="58" cy="48" r="2.2" fill="#7a2d14"/>
-                <circle cx="48" cy="58" r="2.2" fill="#7a2d14"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.35" data-eb-role="h3" data-eb-kind="text">Pizza Mexicana</h3>
-                <span class="menu-card__price">$230</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">Chorizo, jalapeño fresco y mucho queso. Con ese toque picosito.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="queso" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f7df9a"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <path d="M48 20c6 0 9 6 6 12-1 2 0 4 2 4" stroke="#f5b83d" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7"/>
-                <path d="M30 34c5-2 8 2 6 8" stroke="#f5b83d" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
-                <path d="M64 52c5 2 6 6 2 9" stroke="#f5b83d" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
-                <circle cx="48" cy="48" r="3" fill="#e8c04a"/>
-                <circle cx="38" cy="56" r="3" fill="#e8c04a"/>
-                <circle cx="58" cy="58" r="3" fill="#e8c04a"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.37" data-eb-role="h3" data-eb-kind="text">Pizza 4 Quesos</h3>
-                <span class="menu-card__price">$240</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.38" data-eb-role="p" data-eb-kind="text">Mozzarella, parmesano, gouda y queso de cabra. Pura cremosidad.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="carnes" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <circle cx="34" cy="36" r="7" fill="#c23b1e"/>
-                <circle cx="60" cy="34" r="7" fill="#8a3b22"/>
-                <circle cx="40" cy="58" r="7" fill="#c23b1e"/>
-                <circle cx="62" cy="56" r="7" fill="#8a3b22"/>
-                <circle cx="48" cy="48" r="6" fill="#c23b1e"/>
-                <rect x="38" y="26" width="6" height="6" rx="1.5" fill="#8a3b22"/>
-                <rect x="58" y="46" width="6" height="6" rx="1.5" fill="#8a3b22"/>
-                <rect x="34" y="52" width="6" height="6" rx="1.5" fill="#8a3b22"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.39" data-eb-role="h3" data-eb-kind="text">Pizza de Carnes</h3>
-                <span class="menu-card__price">$260</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.40" data-eb-role="p" data-eb-kind="text">Peperoni, jamón, chorizo y tocino sobre la cama de queso.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="veg" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <g fill="#4a7c3a">
-                  <circle cx="34" cy="38" r="5"/>
-                  <circle cx="62" cy="40" r="5"/>
-                  <circle cx="40" cy="60" r="5"/>
-                  <circle cx="58" cy="60" r="5"/>
-                </g>
-                <g fill="#3d2a1c">
-                  <circle cx="48" cy="50" r="4"/>
-                </g>
-                <g fill="#e8e2d4">
-                  <ellipse cx="48" cy="32" rx="3" ry="4"/>
-                </g>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.41" data-eb-role="h3" data-eb-kind="text">Pizza Vegetariana</h3>
-                <span class="menu-card__price">$210</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.42" data-eb-role="p" data-eb-kind="text">Pimiento, champiñones, cebolla y aceitunas. Ligera y llena de sabor.</p>
-            </div>
-          </article>
-
-          <article class="menu-card" data-category="pizzas">
-            <div class="menu-card__art" data-kind="sup" aria-hidden="true">
-              <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="48" cy="48" r="38" fill="#f2d383"/>
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1a1512" stroke-width="7"/>
-                <circle cx="32" cy="34" r="6" fill="#c23b1e"/>
-                <circle cx="64" cy="34" r="6" fill="#c23b1e"/>
-                <circle cx="48" cy="60" r="6" fill="#c23b1e"/>
-                <circle cx="32" cy="56" r="5" fill="#4a7c3a"/>
-                <circle cx="62" cy="58" r="5" fill="#4a7c3a"/>
-                <circle cx="48" cy="40" r="5" fill="#3d2a1c"/>
-                <rect x="42" y="24" width="6" height="6" rx="1.5" fill="#8a3b22"/>
-                <rect x="58" y="46" width="6" height="6" rx="1.5" fill="#8a3b22"/>
-              </svg>
-            </div>
-            <div class="menu-card__body">
-              <div class="menu-card__head">
-                <h3 class="menu-card__name" data-eb-editable="text" data-eb-key="index.h3.43" data-eb-role="h3" data-eb-kind="text">Pizza Suprema</h3>
-                <span class="menu-card__price">$300</span>
-              </div>
-              <p class="menu-card__desc" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Un poco de todo: carnes, vegetales y quesos. La reina de la carta.</p>
-            </div>
-          </article>
-
-        </div>
-
-        <p class="menu__note" data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">Puedes personalizar tu pizza a tu gusto. Los precios varían de <strong>$150</strong> a <strong>$350</strong> según el tamaño y los ingredientes. Con cada pizza, pide tu Coca-Cola o jugo.</p>
-      </div>
-    </section>
-
-    <section class="about" id="nosotros">
-      <div class="container about__grid">
-        <div class="about__copy">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Nosotros</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.47" data-eb-role="h2" data-eb-kind="text">Hecha en Campeche,<br>como debe ser.</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">En <strong>Phanton</strong> vendemos pizza a domicilio por solo $5 o también puedes venir a comer al local. Cada pizza sale del horno con masa fresca y los ingredientes que harían feliz a cualquiera.</p>
-          <div class="stats">
-            <div class="stat">
-              <span class="stat__num">$150–350</span>
-              <span class="stat__label">Precios en nuestra carta</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">$5</span>
-              <span class="stat__label">Costo de entrega a domicilio</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">7 am–11 pm</span>
-              <span class="stat__label">Martes a domingo</span>
-            </div>
+          <div class="body">
+            <span class="price">$150</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.22" data-eb-role="h3" data-eb-kind="text">Margarita</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Salsa de tomate, mozzarella derretida y albahaca fresca sobre masa artesanal.</p>
+            <span class="meta">Clásica</span>
           </div>
-        </div>
-
-        <div class="about__visual" aria-hidden="true">
-          <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="60" y="70" width="320" height="240" rx="14" fill="#1a1512"/>
-            <rect x="60" y="70" width="320" height="240" rx="14" fill="none" stroke="#b98a34" stroke-width="2"/>
-            <path d="M60 70 L380 310" stroke="#2a2118" stroke-width="2"/>
-            <circle cx="220" cy="160" r="58" fill="#b98a34" opacity="0.16"/>
-            <circle cx="220" cy="160" r="58" fill="none" stroke="#b98a34" stroke-width="1.5" stroke-dasharray="3 8"/>
-            <text x="220" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#f6f1e7" letter-spacing="6">PHANTON</text>
-            <text x="220" y="198" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#b98a34" letter-spacing="4">CAM - PECHE</text>
-            <path d="M160 256 l30 26 l-46 2 z" fill="#c23b1e"/>
-            <path d="M308 96 l-6 12 12 3 -2-13z" fill="#f2d383"/>
-            <path d="M120 244 l8 10 -6 12 -12 -2 z" fill="#f2d383"/>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <section class="delivery" id="domicilio">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.49" data-eb-role="p" data-eb-kind="text">Domicilio</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.50" data-eb-role="h2" data-eb-kind="text">Pide y llega hasta tu puerta</h2>
-          <p class="section-lead" data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Entrega a domicilio en Campeche por solo $5. Si prefieres, ven a disfrutarla en el local.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <span class="step__num">01</span>
-            <p class="step__title" data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Elige tu pizza</p>
-            <p class="step__text" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Revisa la carta y arma tu combinación favorita con tu bebida.</p>
+        </article>
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">La favorita</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza hawaiana con jamón y piña" loading="lazy" data-eb-editable="image" data-eb-key="index.img.24" data-eb-role="img" data-eb-kind="image">
           </div>
-          <div class="step">
-            <span class="step__num">02</span>
-            <p class="step__title" data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Escríbenos por WhatsApp</p>
-            <p class="step__text" data-eb-editable="text" data-eb-key="index.p.55" data-eb-role="p" data-eb-kind="text">Mándanos tu pedido en un mensaje y lo confirmamos al instante.</p>
+          <div class="body">
+            <span class="price">$200</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.25" data-eb-role="h3" data-eb-kind="text">Hawaiana</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text">Jamón, piña dorada y mozzarella. Dulce y salado en cada porción.</p>
+            <span class="meta">Favorita</span>
           </div>
-          <div class="step">
-            <span class="step__num">03</span>
-            <p class="step__title" data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">La recibes calientita</p>
-            <p class="step__text" data-eb-editable="text" data-eb-key="index.p.57" data-eb-role="p" data-eb-kind="text">En minutos está lista. En tu mesa o en tu puerta por solo $5.</p>
+        </article>
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">Especial</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza de cuatro quesos con gratinado dorado" loading="lazy" data-eb-editable="image" data-eb-key="index.img.27" data-eb-role="img" data-eb-kind="image">
           </div>
-        </div>
-
-        <div class="delivery__cta">
-          <p data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">¿Listo para el antojo?</p>
-          <a class="btn btn--gold btn--lg" href="#pedir" data-whatsapp data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">Haz tu pedido en WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="hours">
-      <div class="container hours__grid">
-        <div class="hours__block">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text">Horario</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.61" data-eb-role="h2" data-eb-kind="text">Te esperamos</h2>
-          <ul class="hours__list">
-            <li><span>Martes a Domingo</span><strong>7:00 am – 11:00 pm</strong></li>
-            <li><span>Lunes</span><strong>Descanso</strong></li>
-          </ul>
-          <p class="hours__note" data-eb-editable="text" data-eb-key="index.p.62" data-eb-role="p" data-eb-kind="text">Entregas a domicilio disponibles durante todo nuestro horario de atención.</p>
-        </div>
-        <div class="hours__location" id="ubicacion">
-          <p class="kicker" data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">Ubicación</p>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.64" data-eb-role="h2" data-eb-kind="text">Campeche, México</h2>
-          <div class="map">
-            <iframe
-              title="Ubicación de Phanton en Campeche"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"
-              width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="body">
+            <span class="price">$220</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">4 Quesos</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Mozzarella, parmesano, gouda y queso crema con un dorado de gratinado.</p>
+            <span class="meta">Especial</span>
           </div>
-        </div>
+        </article>
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">Combo</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza de entrada acompañada de refresco" loading="lazy" data-eb-editable="image" data-eb-key="index.img.30" data-eb-role="img" data-eb-kind="image">
+          </div>
+          <div class="body">
+            <span class="price">$180</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.31" data-eb-role="h3" data-eb-kind="text">De Entrada</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">Una pizza clásica con tu coca cola o jugo incluido. Perfecta para una persona.</p>
+            <span class="meta">Combo personal</span>
+          </div>
+        </article>
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">Picante</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza con pepperoni crocante y queso fundido" loading="lazy" data-eb-editable="image" data-eb-key="index.img.33" data-eb-role="img" data-eb-kind="image">
+          </div>
+          <div class="body">
+            <span class="price">$230</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.34" data-eb-role="h3" data-eb-kind="text">Pepperoni Suprema</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">Doble pepperoni crocante, mozzarella fundida y jalapeño para darle carácter.</p>
+            <span class="meta">Especial de la casa</span>
+          </div>
+        </article>
+        <article class="dish-card" data-reveal>
+          <div class="media">
+            <span class="tag">Familiar</span>
+            <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza familiar de ocho porciones para compartir" loading="lazy" data-eb-editable="image" data-eb-key="index.img.36" data-eb-role="img" data-eb-kind="image">
+          </div>
+          <div class="body">
+            <span class="price">$350</span>
+            <h3 data-eb-editable="text" data-eb-key="index.h3.37" data-eb-role="h3" data-eb-kind="text">Familiar Especial</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.38" data-eb-role="p" data-eb-kind="text">Ocho porciones con doble ingrediente. La preferida para compartir en familia.</p>
+            <span class="meta">Para compartir</span>
+          </div>
+        </article>
       </div>
-    </section>
-
-    <section class="cta" id="pedir">
-      <div class="container cta__inner">
-        <div class="cta__glow" aria-hidden="true"></div>
-        <p class="kicker cta__kicker" data-eb-editable="text" data-eb-key="index.p.65" data-eb-role="p" data-eb-kind="text">Pedidos por WhatsApp</p>
-        <h2 class="cta__title" data-eb-editable="text" data-eb-key="index.h2.66" data-eb-role="h2" data-eb-kind="text">Tu antojo no espera</h2>
-        <p class="cta__text" data-eb-editable="text" data-eb-key="index.p.67" data-eb-role="p" data-eb-kind="text">Escríbenos y tu pizza sale del horno. Sin llamadas, sin complicaciones: solo un mensaje.</p>
-        <a class="btn btn--gold btn--lg" href="#" data-whatsapp data-eb-editable="link" data-eb-key="index.a.68" data-eb-role="a" data-eb-kind="link">
-          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9 0-2.65-1.03-5.14-2.9-7.02A9.82 9.82 0 0 0 12.04 2zm0 1.8c2.14 0 4.15.83 5.67 2.35a7.98 7.98 0 0 1 2.34 5.67 8.09 8.09 0 0 1-8.1 8.1c-1.5 0-2.98-.41-4.26-1.19l-.31-.18-3.15.83.84-3.07-.2-.31a8.06 8.06 0 0 1-1.24-4.29 8.1 8.1 0 0 1 2.35-5.67 8.02 8.02 0 0 1 5.66-2.34zm-3.46 3.75c-.1-.01-.7-.12-.95.47-.06.15-.22.67-.22 1.42 0 1.29.91 2.77 1.07 2.98.16.21 1.7 2.67 4.17 3.65 1.62.64 1.94.62 2.28.57.5-.07 1.49-.65 1.7-1.26.21-.61.23-1.12.16-1.25l-.21-.34c-.08-.13-.3-.21-.62-.37-.32-.16-1.88-.92-2.17-1.03-.29-.1-.5-.15-.71.11l-.91 1.04c-.08.08-.17.09-.29.05-.12-.04-.92-.34-1.77-1.09-.64-.56-1.06-1.24-1.18-1.45-.12-.21-.01-.32.09-.42.09-.09.2-.22.3-.34.1-.12.13-.2.2-.34.06-.14.03-.26-.02-.36-.05-.1-.7-1.72-.98-2.36-.24-.56-.49-.56-.7-.57z"/></svg>
-          Haz tu pedido en WhatsApp
-        </a>
-        <p class="cta__phone" data-eb-editable="text" data-eb-key="index.p.69" data-eb-role="p" data-eb-kind="text">
-          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>
-          <a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.70" data-eb-role="a" data-eb-kind="link">111 346 7889</a>
-        </p>
+      <div class="card-actions" data-reveal>
+        <a href="menu.html" class="btn btn--primary" data-eb-editable="link" data-eb-key="index.a.39" data-eb-role="a" data-eb-kind="link">Ver menú completo</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo de pizza">
-            <circle cx="32" cy="32" r="29" fill="#b98a34"/>
-            <path d="M32 32 L12 16 A32 32 0 0 1 52 16 Z" fill="#f6f1e7"/>
-            <circle cx="26" cy="23" r="4" fill="#c23b1e"/>
-            <circle cx="39" cy="28" r="4" fill="#c23b1e"/>
-          </svg>
-        </span>
-        <span class="brand__text">Phanton</span>
-      </div>
-      <p class="site-footer__tagline" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">Pizza artesanal a domicilio en Campeche. Martes a domingo, de 7:00 am a 11:00 pm.</p>
-      <div class="site-footer__meta">
-        <span>Campeche, México</span>
-        <span>&middot;</span>
-        <span><a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.72" data-eb-role="a" data-eb-kind="link">111 346 7889</a></span>
-        <span>&middot;</span>
-        <span>Entrega a domicilio $5</span>
-      </div>
-      <p class="site-footer__copy" data-eb-editable="text" data-eb-key="index.p.73" data-eb-role="p" data-eb-kind="text">&copy; <span id="year">2026</span> Phanton. Todos los derechos reservados.</p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="overline">Galería</span>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.40" data-eb-role="h2" data-eb-kind="text">Así se ve nuestra mesa</h2>
+      </div>
+      <div class="gallery">
+        <figure data-reveal>
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Pizza recién horneada sobre la mesa" loading="lazy" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
+          <figcaption>Recién horneada</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Queso fundido en una porción de pizza" loading="lazy" data-eb-editable="image" data-eb-key="index.img.42" data-eb-role="img" data-eb-kind="image">
+          <figcaption>Detalle del horno</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Interior cálido de la pizzería" loading="lazy" data-eb-editable="image" data-eb-key="index.img.43" data-eb-role="img" data-eb-kind="image">
+          <figcaption>Nuestro local</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=media-fallback%2Fimagen-generica.jpg" alt="Bebida fría acompañando la pizza" loading="lazy" data-eb-editable="image" data-eb-key="index.img.44" data-eb-role="img" data-eb-kind="image">
+          <figcaption>Maridaje clásico</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="horario">
+    <div class="container info-grid">
+      <div class="info-block" data-reveal>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.45" data-eb-role="h3" data-eb-kind="text">Horario y pedidos</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Estamos para ti de martes a domingo. Pide por WhatsApp o llámanos y lo dejamos todo listo.</p>
+        <dl class="info-row"><dt>Días</dt><dd>Martes a domingo</dd></dl>
+        <dl class="info-row"><dt>Horario</dt><dd>7 am – 11 pm</dd></dl>
+        <dl class="info-row"><dt>Servicio</dt><dd>Para llevar, local y domicilio</dd></dl>
+        <dl class="info-row"><dt>Envío</dt><dd class="amber">$5 a domicilio</dd></dl>
+        <dl class="info-row"><dt>Teléfono</dt><dd><a class="big-phone" href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.47" data-eb-role="a" data-eb-kind="link">111 346 7889</a></dd></dl>
+        <div class="mini-actions">
+          <a href="https://wa.me/521113467889" target="_blank" rel="noopener" class="btn btn--primary btn--small" data-eb-editable="link" data-eb-key="index.a.48" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
+          <a href="contacto.html" class="btn btn--ghost btn--small" data-eb-editable="link" data-eb-key="index.a.49" data-eb-role="a" data-eb-kind="link">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="info-block" data-reveal>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.50" data-eb-role="h3" data-eb-kind="text">Nuestra ubicación</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Ven por tu pizza recién horneada o ubica el local en el mapa antes de llamar.</p>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mapa de ubicación de Phanton en Campeche"></iframe>
+        </div>
+        <p class="menu-note" data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Pizzas y Tacos El Suspiro · Campeche, México</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container" data-reveal>
+      <span class="overline" style="justify-content:center;">Estás a una llamada de distancia</span>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.53" data-eb-role="h2" data-eb-kind="text">¿Antojo de pizza hoy?</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Mándanos tu pedido por WhatsApp o llámanos. Lo preparamos al momento y te lo llevamos a domicilio por solo $5, o te esperamos en el local.</p>
+      <a href="https://wa.me/521113467889" target="_blank" rel="noopener" class="btn btn--primary" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Pide por WhatsApp</a>
+      <p class="cta-note" data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">o llama al <span class="amber">111 346 7889</span> &middot; martes a domingo &middot; 7 am – 11 pm</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link">Phanton<i>.</i></a>
+        <p data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Pizzería artesanal en Campeche. Masa fresca, horno caliente y el sabor casero que se comparte en familia.</p>
+      </div>
+      <div>
+        <p class="foot-title" data-eb-editable="text" data-eb-key="index.p.59" data-eb-role="p" data-eb-kind="text">Navegación</p>
+        <ul class="foot-list">
+          <li><a href="index.html" data-eb-editable="link" data-eb-key="index.a.60" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
+          <li><a href="menu.html" data-eb-editable="link" data-eb-key="index.a.61" data-eb-role="a" data-eb-kind="link">Menú</a></li>
+          <li><a href="contacto.html" data-eb-editable="link" data-eb-key="index.a.62" data-eb-role="a" data-eb-kind="link">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-title" data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">Contacto</p>
+        <ul class="foot-list">
+          <li><a href="tel:+521113467889" data-eb-editable="link" data-eb-key="index.a.64" data-eb-role="a" data-eb-kind="link">111 346 7889</a></li>
+          <li><a href="https://wa.me/521113467889" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.65" data-eb-role="a" data-eb-kind="link">WhatsApp</a></li>
+          <li><span>Martes a domingo · 7 am – 11 pm</span></li>
+          <li><span>Envío a domicilio por $5</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Phanton · Pizzería en Campeche</span>
+      <span>Hecho con masa fresca en Campeche</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
