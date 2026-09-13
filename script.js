@@ -1,121 +1,109 @@
+/* Phanton — interacciones del sitio */
 (function () {
-  'use strict';
+  "use strict";
 
-  var WHATSAPP_NUMBER = '521113467889';
-  var WHATSAPP_MESSAGE = 'Hola Phanton, quiero hacer un pedido de pizza';
+  const WHATSAPP = "521113467889";
 
-  function waLink() {
-    return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(WHATSAPP_MESSAGE);
+  /* Header con fondo al hacer scroll */
+  const header = document.querySelector("[data-header]");
+  if (header) {
+    const onScroll = () =>
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  document.querySelectorAll('[data-whatsapp]').forEach(function (el) {
-    el.setAttribute('href', waLink());
-    el.setAttribute('target', '_blank');
-    el.setAttribute('rel', 'noopener');
-  });
-
-  var header = document.getElementById('siteHeader');
-
-  function onScroll() {
-    if (window.scrollY > 8) {
-      header.classList.add('is-scrolled');
-    } else {
-      header.classList.remove('is-scrolled');
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  var nav = document.getElementById('siteNav');
-  var navToggle = document.getElementById('navToggle');
-
-  navToggle.addEventListener('click', function () {
-    var open = nav.classList.toggle('is-open');
-    navToggle.classList.toggle('is-open', open);
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      navToggle.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  /* Navegación móvil */
+  const toggle = document.querySelector("[data-nav-toggle]");
+  const navMenu = document.querySelector(".nav-menu");
+  if (toggle && navMenu) {
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      navMenu.classList.toggle("is-open", !open);
     });
-  });
+    navMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        toggle.setAttribute("aria-expanded", "false");
+        navMenu.classList.remove("is-open");
+      });
+    });
+  }
 
-  var sections = document.querySelectorAll('section[id], main[id]');
-  var navLinks = Array.prototype.slice.call(nav.querySelectorAll('.site-nav__link'));
-
-  var spy = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var id = entry.target.getAttribute('id');
-        navLinks.forEach(function (link) {
-          var active = link.getAttribute('href') === '#inicio' && id === 'inicio';
-          if (link.getAttribute('href') === '#' + id) {
-            active = true;
+  /* Aparición suave de secciones */
+  const reveals = document.querySelectorAll("[data-reveal]");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
           }
-          link.classList.toggle('is-active', active);
         });
-      });
-    },
-    { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
-  );
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add("is-visible"));
+  }
 
-  sections.forEach(function (section) {
-    spy.observe(section);
-  });
-
-  var revealEls = document.querySelectorAll('.section-head, .section-title, .kicker, .featured__card, .about__copy, .about__visual, .steps, .menu-card, .delivery__cta, .hours__block, .hours__location, .cta__inner');
-  var revealObs = new IntersectionObserver(
-    function (entries, obs) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
-  );
-
-  revealEls.forEach(function (el) {
-    if (!el.classList.contains('menu-card') && !el.closest('.menu__grid')) {
-      el.classList.add('reveal');
-      revealObs.observe(el);
-    }
-  });
-
-  var tabs = document.querySelectorAll('.menu__filter');
-  var cards = Array.prototype.slice.call(document.querySelectorAll('.menu-card'));
-
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      tabs.forEach(function (t) {
-        var active = t === tab;
-        t.classList.toggle('is-active', active);
-        t.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-
-      var filter = tab.getAttribute('data-filter');
-
-      cards.forEach(function (card, index) {
-        var match = filter === 'todos' || card.getAttribute('data-category') === filter;
-        card.classList.toggle('is-hidden', !match);
-        if (match) {
-          card.classList.remove('animate-in');
-          void card.offsetWidth;
-          card.style.animationDelay = index * 40 + 'ms';
-          card.classList.add('animate-in');
+  /* Filtro de categorías del menú */
+  const filters = document.querySelectorAll("[data-filter]");
+  const categories = document.querySelectorAll("[data-category]");
+  if (filters.length && categories.length) {
+    filters.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = btn.getAttribute("data-filter");
+        filters.forEach((f) =>
+          f.classList.toggle("is-active", f === btn)
+        );
+        categories.forEach((cat) => {
+          const match =
+            value === "all" || cat.getAttribute("data-category") === value;
+          cat.hidden = !match;
+          if (match) {
+            cat.classList.remove("is-visible");
+            requestAnimationFrame(() => cat.classList.add("is-visible"));
+          }
+        });
+        const anchor = document.querySelector(".filters");
+        if (anchor) {
+          const top =
+            anchor.getBoundingClientRect().top + window.scrollY - 96;
+          if (window.scrollY > top) {
+            window.scrollTo({ top, behavior: "smooth" });
+          }
         }
       });
     });
-  });
+  }
 
-  var yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = String(new Date().getFullYear());
+  /* Formulario de pedido -> WhatsApp */
+  const orderForm = document.querySelector("[data-order-form]");
+  if (orderForm) {
+    orderForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const data = new FormData(orderForm);
+      const name = (data.get("nombre") || "").toString().trim();
+      const order = (data.get("pedido") || "").toString().trim();
+      const address = (data.get("direccion") || "").toString().trim();
+      const notes = (data.get("notas") || "").toString().trim();
+
+      let message = "¡Hola Phanton! Quiero hacer un pedido.\n\n";
+      message += "Nombre: " + (name || "(sin nombre)") + "\n";
+      message += "Pedido: " + (order || "(por definir)") + "\n";
+      if (address) message += "Entrega: " + address + "\n";
+      if (notes) message += "Notas: " + notes + "\n";
+      message += "\n¿Me confirman el total y el tiempo de entrega?";
+
+      const url =
+        "https://wa.me/" +
+        WHATSAPP +
+        "?text=" +
+        encodeURIComponent(message);
+      window.open(url, "_blank", "noopener");
+    });
   }
 })();
