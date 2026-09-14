@@ -1,180 +1,86 @@
-/* =========================================
-   PHANTON PIZZAS — Scripts
-   ========================================= */
-
+/* Phanton · Interacciones del sitio */
 (function () {
-  'use strict';
+  "use strict";
 
-  /* -----------------------------------------
-     Navbar scroll effect
-     ----------------------------------------- */
-  const navbar = document.getElementById('navbar');
+  var header = document.querySelector(".site-header");
+  var navToggle = document.getElementById("navToggle");
+  var mainNav = document.getElementById("mainNav");
 
-  function handleNavbarScroll() {
-    if (window.scrollY > 60) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+  /* ---------- Header al hacer scroll ---------- */
+  function onScroll() {
+    if (window.scrollY > 10) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Menú móvil ---------- */
+  function closeNav() {
+    mainNav.classList.remove("is-open");
+    navToggle.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
   }
 
-  window.addEventListener('scroll', handleNavbarScroll, { passive: true });
-
-  /* -----------------------------------------
-     Mobile menu toggle
-     ----------------------------------------- */
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-
-  function closeMenu() {
-    navMenu.classList.remove('open');
-    navToggle.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  navToggle.addEventListener('click', function () {
-    const isOpen = navMenu.classList.contains('open');
-    if (isOpen) {
-      closeMenu();
-    } else {
-      navMenu.classList.add('open');
-      navToggle.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
+  navToggle.addEventListener("click", function () {
+    var open = mainNav.classList.toggle("is-open");
+    navToggle.classList.toggle("is-open", open);
+    navToggle.setAttribute("aria-expanded", String(open));
   });
 
-  /* Close mobile menu on link click */
-  document.querySelectorAll('.nav-link').forEach(function (link) {
-    link.addEventListener('click', function () {
-      closeMenu();
-    });
+  mainNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeNav);
   });
 
-  /* Close mobile menu on outside click */
-  document.addEventListener('click', function (e) {
-    if (
-      navMenu.classList.contains('open') &&
-      !navMenu.contains(e.target) &&
-      !navToggle.contains(e.target)
-    ) {
-      closeMenu();
-    }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeNav();
   });
 
-  /* -----------------------------------------
-     Active nav link on scroll
-     ----------------------------------------- */
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  /* ---------- Tabs del menú ---------- */
+  var tabs = document.querySelectorAll(".menu-tab");
+  var groups = document.querySelectorAll(".menu-group");
 
-  function updateActiveNav() {
-    let current = '';
-    sections.forEach(function (section) {
-      var rect = section.getBoundingClientRect();
-      if (rect.top <= 120 && rect.bottom > 120) {
-        current = section.getAttribute('id');
-      }
-    });
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var cat = tab.getAttribute("data-cat");
 
-    navLinks.forEach(function (link) {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
-  }
+      tabs.forEach(function (t) {
+        var active = t === tab;
+        t.classList.toggle("is-active", active);
+        t.setAttribute("aria-selected", String(active));
+      });
 
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-
-  /* -----------------------------------------
-     Menu filter
-     ----------------------------------------- */
-  var filterBtns = document.querySelectorAll('.filter-btn');
-  var menuCards = document.querySelectorAll('.menu-card');
-
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var filter = this.getAttribute('data-filter');
-
-      /* Update active button */
-      filterBtns.forEach(function (b) { b.classList.remove('active'); });
-      this.classList.add('active');
-
-      /* Filter cards */
-      menuCards.forEach(function (card) {
-        var category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.style.display = '';
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          requestAnimationFrame(function () {
-            requestAnimationFrame(function () {
-              card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-              card.style.opacity = '1';
-              card.style.transform = 'translateY(0)';
-            });
-          });
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(function () {
-            card.style.display = 'none';
-          }, 400);
-        }
+      groups.forEach(function (group) {
+        var show = group.getAttribute("data-group") === cat;
+        group.hidden = !show;
+        group.setAttribute("aria-hidden", String(!show));
       });
     });
   });
 
-  /* -----------------------------------------
-     Scroll reveal animations
-     ----------------------------------------- */
-  function initScrollReveal() {
-    var targets = document.querySelectorAll(
-      '.section-header, .about-text, .about-stats, .stat, ' +
-      '.menu-card, .info-card, .contact-card, .footer-content > div'
-    );
+  /* ---------- Animación de aparición al hacer scroll ---------- */
+  var revealEls = document.querySelectorAll(
+    ".hero-copy, .hero-plate, .info-item, .featured-card, " +
+    ".menu-tabs, .menu-group, .about-copy, .about-mosaic, " +
+    ".location-card, .comments-widget"
+  );
 
-    targets.forEach(function (el) {
-      el.classList.add('fade-in');
-    });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-      }
-    );
-
-    targets.forEach(function (el) {
-      observer.observe(el);
+    revealEls.forEach(function (el) {
+      el.classList.add("reveal");
+      io.observe(el);
     });
   }
 
-  initScrollReveal();
-
-  /* -----------------------------------------
-     Smooth scroll for anchor links
-     ----------------------------------------- */
-  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (e) {
-      var targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      var target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        var offset = 70;
-        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
-    });
-  });
-
+  /* ---------- Año en el footer ---------- */
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
