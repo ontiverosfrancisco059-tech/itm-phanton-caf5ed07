@@ -1,86 +1,85 @@
-/* Phanton · Interacciones del sitio */
 (function () {
   "use strict";
 
-  var header = document.querySelector(".site-header");
-  var navToggle = document.getElementById("navToggle");
-  var mainNav = document.getElementById("mainNav");
+  var PROJECT_ID = "caf5ed07-fb64-4bcb-96b5-abfb4fa93d42";
+  var PHONE_DISPLAY = "111 346 7889";
+  var WHATSAPP_URL = "https://wa.me/521113467889";
+  var CTA_TEXT = "Hola Phanton, quiero hacer un pedido de pizza";
 
-  /* ---------- Header al hacer scroll ---------- */
-  function onScroll() {
-    if (window.scrollY > 10) header.classList.add("scrolled");
-    else header.classList.remove("scrolled");
-  }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  function initNav() {
+    var toggle = document.getElementById("navToggle");
+    var nav = document.getElementById("siteNav");
+    if (!toggle || !nav) return;
 
-  /* ---------- Menú móvil ---------- */
-  function closeNav() {
-    mainNav.classList.remove("is-open");
-    navToggle.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  }
-
-  navToggle.addEventListener("click", function () {
-    var open = mainNav.classList.toggle("is-open");
-    navToggle.classList.toggle("is-open", open);
-    navToggle.setAttribute("aria-expanded", String(open));
-  });
-
-  mainNav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", closeNav);
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeNav();
-  });
-
-  /* ---------- Tabs del menú ---------- */
-  var tabs = document.querySelectorAll(".menu-tab");
-  var groups = document.querySelectorAll(".menu-group");
-
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      var cat = tab.getAttribute("data-cat");
-
-      tabs.forEach(function (t) {
-        var active = t === tab;
-        t.classList.toggle("is-active", active);
-        t.setAttribute("aria-selected", String(active));
-      });
-
-      groups.forEach(function (group) {
-        var show = group.getAttribute("data-group") === cat;
-        group.hidden = !show;
-        group.setAttribute("aria-hidden", String(!show));
-      });
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
     });
-  });
 
-  /* ---------- Animación de aparición al hacer scroll ---------- */
-  var revealEls = document.querySelectorAll(
-    ".hero-copy, .hero-plate, .info-item, .featured-card, " +
-    ".menu-tabs, .menu-group, .about-copy, .about-mosaic, " +
-    ".location-card, .comments-widget"
-  );
-
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          io.unobserve(entry.target);
-        }
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-
-    revealEls.forEach(function (el) {
-      el.classList.add("reveal");
-      io.observe(el);
     });
   }
 
-  /* ---------- Año en el footer ---------- */
-  var yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  function enhanceHeaders() {
+    document.querySelectorAll("h1, h2").forEach(function (heading) {
+      var text = heading.textContent.trim();
+      if (text.charAt(0) !== text.charAt(0).toUpperCase()) {
+        heading.textContent = text.charAt(0).toUpperCase() + text.slice(1);
+      }
+    });
+  }
+
+  function buildWaLinks() {
+    var links = document.querySelectorAll('a[data-wa-cta]');
+    links.forEach(function (link) {
+      link.href = WHATSAPP_URL + "?text=" + encodeURIComponent(CTA_TEXT);
+    });
+
+    document.querySelectorAll(".menu-order").forEach(function (el) {
+      var label = el.textContent.trim();
+      var msg = label + " en Phanton";
+      el.href = WHATSAPP_URL + "?text=" + encodeURIComponent(msg);
+    });
+  }
+
+  function revealOnScroll() {
+    var items = document.querySelectorAll(".menu-card, .gallery-item, .fact, .delivery-card, .featured-media, .about-media");
+    if (!("IntersectionObserver" in window)) return;
+
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    items.forEach(function (item) {
+      item.classList.add("reveal");
+      io.observe(item);
+    });
+  }
+
+  function initFallbackProfileNote() {
+    var note = document.querySelector("[data-itm-note]");
+    if (note && !note.textContent.trim()) {
+      note.textContent = "Tu pedido se confirma por WhatsApp.";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initNav();
+    enhanceHeaders();
+    buildWaLinks();
+    revealOnScroll();
+    initFallbackProfileNote();
+  });
 })();
