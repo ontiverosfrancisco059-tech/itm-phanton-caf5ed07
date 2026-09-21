@@ -1,0 +1,160 @@
+{
+  "media_requests": [
+    {
+      "slot_id": "home-hero",
+      "page": "home",
+      "section": "hero",
+      "category": "place",
+      "label": "Fondo hero: pizzeria elegante",
+      "theme": "elegante, minimalista, premium, alto contraste",
+      "query": "elegant artisan pizza on dark rustic wooden table",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "home-featured",
+      "page": "home",
+      "section": "featured",
+      "category": "dish",
+      "label": "Pizza destacada: hawaiana",
+      "theme": "premium, apetitoso, profesional",
+      "query": "hawaiian pizza with ham and pineapple melted cheese",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "home-about",
+      "page": "home",
+      "section": "about",
+      "category": "place",
+      "label": "Interior del local",
+      "theme": "elegante, minimalista, acogedor",
+      "query": "modern minimalist pizza restaurant interior",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "menu-start",
+      "page": "menu",
+      "section": "menu_category_entrada",
+      "category": "dish",
+      "label": "Categoria: entrada",
+      "theme": "apetitoso, fresco, premium",
+      "query": "fresh appetizer salad served in modern restaurant",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "menu-pizza",
+      "page": "menu",
+      "section": "menu_category_pizzas",
+      "category": "dish",
+      "label": "Categoria: pizzas clasicas",
+      "theme": "premium, apetitoso, elegante",
+      "query": "classic margherita pizza with basil on rustic board",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "menu-special",
+      "page": "menu",
+      "section": "menu_category_especiales",
+      "category": "dish",
+      "label": "Categoria: pizzas especiales",
+      "theme": "gourmet, premium, alto contraste",
+      "query": "gourmet specialty pizza with artisan toppings",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "menu-drinks",
+      "page": "menu",
+      "section": "menu_category_bebidas",
+      "category": "product",
+      "label": "Categoria: bebidas (cola y jugos)",
+      "theme": "fresco, simple, premium",
+      "query": "soft drinks and fresh juice glasses with pizza",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-1",
+      "page": "galeria",
+      "section": "gallery",
+      "category": "gallery",
+      "label": "Galeria: rebanada de pizza",
+      "theme": "apetitoso, premium, close-up",
+      "query": "close up pizza slice with stretchy melted cheese",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-2",
+      "page": "galeria",
+      "section": "gallery_elaboracion",
+      "category": "gallery",
+      "label": "Galeria: elaboracion artesanal",
+      "theme": "artesanal, profesional",
+      "query": "pizza chef hands kneading fresh dough kitchen",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-3",
+      "page": "galeria",
+      "section": "gallery_ambiente",
+      "category": "gallery",
+      "label": "Galeria: ambiente de comedor",
+      "theme": "elegante, minimalista, premium",
+      "query": "stylish pizza restaurant dining area warm lighting",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "about-delivery",
+      "page": "about",
+      "section": "delivery",
+      "category": "custom",
+      "label": "Relleno: envio a domicilio",
+      "theme": "simple, profesional",
+      "query": "",
+      "priority": "low",
+      "source": "generic",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "promo-banner",
+      "page": "home",
+      "section": "promo",
+      "category": "custom",
+      "label": "Relleno: banner de promociones",
+      "theme": "premium, minimalista",
+      "query": "",
+      "priority": "low",
+      "source": "generic",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "contact-background",
+      "page": "contacto",
+      "section": "ubicacion",
+      "category": "place",
+      "label": "Relleno: fondo de contacto",
+      "theme": "elegante, sobrio",
+      "query": "",
+      "priority": "low",
+      "source": "generic",
+      "fallback": "GR-AI"
+    }
+  ]
+}
