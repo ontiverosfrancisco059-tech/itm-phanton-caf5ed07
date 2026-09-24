@@ -1,34 +1,46 @@
-// Phanton — interacciones mínimas (comments.js controla login/comentarios)
+// Phanton — interacciones mínimas. Comentarios/login los controla comments.js
 (function(){
-  var toggle = document.getElementById('navToggle');
-  var mobile = document.getElementById('mobileNav');
-  if(toggle && mobile){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mobileNav');
+  if(toggle && nav){
     toggle.addEventListener('click', function(){
-      var open = mobile.hasAttribute('hidden');
-      if(open){ mobile.removeAttribute('hidden'); toggle.setAttribute('aria-expanded','true'); }
-      else{ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); }
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    mobile.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); });
-    });
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape' && !mobile.hasAttribute('hidden')){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
-    });
-    window.addEventListener('resize', function(){
-      if(window.innerWidth > 900 && !mobile.hasAttribute('hidden')){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); }
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('open'); });
     });
   }
-  // Filtro de menú
-  var tabs = document.querySelectorAll('.tab');
-  var cards = document.querySelectorAll('#menuGrid .menu-card');
-  tabs.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      tabs.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
-      var f = btn.getAttribute('data-filter');
-      cards.forEach(function(c){
-        c.style.display = (f === 'all' || c.getAttribute('data-cat') === f) ? '' : 'none';
-      });
+  var copy = document.getElementById('copyMsg');
+  if(copy){
+    copy.addEventListener('click', function(){
+      var txt = 'Hola Phanton, quiero pedir:\n- 1 pizza hawaiana\n- 1 coca-cola\n- A domicilio / En local\nMi nombre es: ';
+      var done = function(){ copy.textContent = 'Copiado ✓'; setTimeout(function(){ copy.textContent = 'Copiar mensaje'; },1800); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done).catch(done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = txt; document.body.appendChild(ta); ta.select();
+        try{ document.execCommand('copy'); }catch(e){}
+        document.body.removeChild(ta); done();
+      }
     });
-  });
+  }
+  // Resalta sección activa
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href')] = a; });
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting && map['#'+e.target.id]){
+          links.forEach(function(l){ l.style.color=''; });
+          map['#'+e.target.id].style.color = '#c93b1f';
+        }
+      });
+    }, {rootMargin:'-40% 0px -55% 0px'});
+    ['nosotros','menu','pedido','visita','opiniones'].forEach(function(id){
+      var s = document.getElementById(id); if(s) obs.observe(s);
+    });
+  }
 })();
