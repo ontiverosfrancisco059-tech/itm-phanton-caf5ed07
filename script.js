@@ -1,46 +1,34 @@
-// Phanton — interacciones mínimas (comments.js gestiona login/comentarios)
+// Phanton — interacciones mínimas (comments.js controla login/comentarios)
 (function(){
-  var btn = document.getElementById('menuBtn');
-  var nav = document.getElementById('nav');
-  if(btn && nav){
-    btn.addEventListener('click', function(){
-      var open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  var toggle = document.getElementById('navToggle');
+  var mobile = document.getElementById('mobileNav');
+  if(toggle && mobile){
+    toggle.addEventListener('click', function(){
+      var open = mobile.hasAttribute('hidden');
+      if(open){ mobile.removeAttribute('hidden'); toggle.setAttribute('aria-expanded','true'); }
+      else{ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); }
     });
-    nav.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); });
+    mobile.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); });
     });
     document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+      if(e.key === 'Escape' && !mobile.hasAttribute('hidden')){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
+    });
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 900 && !mobile.hasAttribute('hidden')){ mobile.setAttribute('hidden',''); toggle.setAttribute('aria-expanded','false'); }
     });
   }
-  var y = document.getElementById('year');
-  if(y) y.textContent = new Date().getFullYear();
-
-  // Filtro menú
-  var chips = document.querySelectorAll('.chip');
-  var dishes = document.querySelectorAll('.dish');
-  chips.forEach(function(c){
-    c.addEventListener('click', function(){
-      chips.forEach(function(x){ x.classList.remove('active'); });
-      c.classList.add('active');
-      var f = c.getAttribute('data-filter');
-      dishes.forEach(function(d){
-        d.style.display = (f==='all' || d.getAttribute('data-cat')===f) ? '' : 'none';
+  // Filtro de menú
+  var tabs = document.querySelectorAll('.tab');
+  var cards = document.querySelectorAll('#menuGrid .menu-card');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(c){
+        c.style.display = (f === 'all' || c.getAttribute('data-cat') === f) ? '' : 'none';
       });
     });
   });
-
-  // Reveal on scroll (con fallback si no hay IntersectionObserver)
-  var revealEls = document.querySelectorAll('.card,.dish,.step,.destacado-visual');
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(es){
-      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target);} });
-    },{threshold:.12});
-    revealEls.forEach(function(el){
-      el.classList.add('reveal'); io.observe(el);
-    });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('visible'); });
-  }
 })();
