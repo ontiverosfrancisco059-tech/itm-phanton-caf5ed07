@@ -1,71 +1,58 @@
-// Phanton — interacciones del sitio (el widget de comentarios lo controla comments.js)
+// Phanton — interacciones del sitio (sin sistema propio de comentarios: eso lo hace comments.js)
 (function () {
-  var menuBtn = document.getElementById('menuBtn');
-  var mobileNav = document.getElementById('mobileNav');
-  if (menuBtn && mobileNav) {
-    menuBtn.addEventListener('click', function () {
-      var open = mobileNav.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  var toggle = document.getElementById('navToggle');
+  var mobile = document.getElementById('mobileNav');
+  if (toggle && mobile) {
+    toggle.addEventListener('click', function () {
+      var open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    mobileNav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        mobileNav.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
+    mobile.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { mobile.classList.remove('open'); });
     });
   }
 
-  // Filtro de categorías del menú
+  // Filtro de menú por categoría
   var tabs = document.querySelectorAll('.tab');
   var dishes = document.querySelectorAll('.dish');
   tabs.forEach(function (tab) {
     tab.addEventListener('click', function () {
-      tabs.forEach(function (t) {
-        t.classList.remove('is-active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      tab.classList.add('is-active');
+      tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
       var f = tab.getAttribute('data-filter');
       dishes.forEach(function (d) {
-        var show = f === 'all' || d.getAttribute('data-cat') === f;
-        d.classList.toggle('hidden', !show);
+        d.classList.toggle('hide', f !== 'all' && d.getAttribute('data-cat') !== f);
       });
     });
   });
 
-  // Nav activa por scroll
-  var links = document.querySelectorAll('.nav-link');
-  var sections = ['inicio', 'menu', 'local', 'proceso', 'opiniones', 'contacto']
-    .map(function (id) { return document.getElementById(id); })
-    .filter(Boolean);
-  function onScroll() {
-    var y = window.scrollY + 140;
-    var current = 'inicio';
-    sections.forEach(function (s) {
-      if (s.offsetTop <= y) current = s.id;
+  // Constructor de mensaje de pedido por WhatsApp
+  var btn = document.getElementById('buildOrder');
+  if (btn) {
+    btn.addEventListener('click', function () {
+      var haw = parseInt(document.getElementById('qHaw').value || '0', 10);
+      var pep = parseInt(document.getElementById('qPep').value || '0', 10);
+      var mex = parseInt(document.getElementById('qMex').value || '0', 10);
+      var name = (document.getElementById('qName').value || '').trim();
+      var parts = [];
+      if (haw > 0) parts.push(haw + 'x hawaiana');
+      if (pep > 0) parts.push(pep + 'x pepperoni');
+      if (mex > 0) parts.push(mex + 'x mexicana');
+      var msg = 'Hola Phanton, quiero pedir: ' + (parts.length ? parts.join(', ') : '(elige tus pizzas)') + (name ? '. ' + name : '');
+      var url = 'https://wa.me/521113467889?text=' + encodeURIComponent(msg);
+      var prev = document.getElementById('orderPreview');
+      prev.innerHTML = '';
+      var span = document.createElement('span');
+      span.textContent = msg + ' ';
+      var link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.className = 'link';
+      link.textContent = 'Enviar por WhatsApp →';
+      prev.appendChild(span);
+      prev.appendChild(link);
     });
-    links.forEach(function (l) {
-      l.classList.toggle('is-active', l.getAttribute('href') === '#' + current);
-    });
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  // Aparición suave
-  var revealEls = document.querySelectorAll('.dish, .process-card, .local-copy, .reviews-shell, .contact-card');
-  revealEls.forEach(function (el) { el.classList.add('reveal'); });
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(function (el) { io.observe(el); });
-  } else {
-    revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
 })();
